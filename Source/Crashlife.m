@@ -26,7 +26,7 @@
 #import "CRLFFootprint.h"
 
 
-static NSString * const kSDKVersion = @"1.0.0";
+static NSString * const kSDKVersion = @"1.0.1";
 
 @interface Crashlife ()
 @property (nonatomic, readonly) BOOL isStarted;
