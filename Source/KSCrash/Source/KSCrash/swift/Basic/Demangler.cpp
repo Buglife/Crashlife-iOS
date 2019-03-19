@@ -1154,7 +1154,7 @@ NodePointer Demangler::popFunctionParamLabels(NodePointer Type) {
         return {nullptr, 0};
     };
     
-    auto getLabel = [&](NodePointer Params, unsigned long Idx) -> NodePointer {
+    auto getLabel = [&](NodePointer Params, unsigned long long Idx) -> NodePointer {
         // Old-style function type mangling has labels as part of the argument.
         if (IsOldFunctionTypeMangling) {
             auto Param = Params->getChild(Idx);
