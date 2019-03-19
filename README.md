@@ -54,12 +54,6 @@ github "Buglife/Crashlife-iOS"
 
 Now run `carthage update`. Then drag & drop the Crashlife.framework in the Carthage/build folder to your project. Refer to the [Carthage README](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application) for detailed / updated instructions.
 
-### Manually
-
-1. Download the Crashlife SDK (coming soon!)
-
-2. Unzip it & pull `Crashlife.framework` into the Frameworks group in your project. In the following dialog box, make sure you have "Copy items if needed" checked.
-
 ## Code
 
 1. Import the Crashlife framework header into your app delegate.
