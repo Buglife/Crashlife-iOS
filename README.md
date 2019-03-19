@@ -3,12 +3,12 @@
 </p>
 
 ![Platform](https://img.shields.io/cocoapods/p/Buglife.svg)
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Buglife.svg)](https://cocoapods.org/pods/Crashlife)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Crashlife.svg)](https://cocoapods.org/pods/Crashlife)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Twitter](https://img.shields.io/badge/twitter-@BuglifeApp-blue.svg)](https://twitter.com/buglifeapp)
 
-Crashlife is an awesome crash reporting SDK & web platform for Android apps. Here's how it works:
+Crashlife is an awesome crash reporting SDK & web platform for iOS apps. Here's how it works:
 
 1. Your app crashes and relaunches
 2. Crashlife sends the crash report to the Crashlife web dashboard
