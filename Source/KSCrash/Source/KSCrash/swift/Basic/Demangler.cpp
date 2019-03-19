@@ -1154,7 +1154,7 @@ NodePointer Demangler::popFunctionParamLabels(NodePointer Type) {
         return {nullptr, 0};
     };
     
-    auto getLabel = [&](NodePointer Params, unsigned long long Idx) -> NodePointer {
+    auto getLabel = [&](NodePointer Params, unsigned long Idx) -> NodePointer {
         // Old-style function type mangling has labels as part of the argument.
         if (IsOldFunctionTypeMangling) {
             auto Param = Params->getChild(Idx);
@@ -1181,7 +1181,10 @@ NodePointer Demangler::popFunctionParamLabels(NodePointer Type) {
     
     bool hasLabels = false;
     for (unsigned long long i = 0, n = ParameterType->getIndex(); i != n; ++i) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wshorten-64-to-32"
         auto Label = getLabel(Tuple, i);
+#pragma clang diagnostic pop
         
         if (!Label)
             return nullptr;
