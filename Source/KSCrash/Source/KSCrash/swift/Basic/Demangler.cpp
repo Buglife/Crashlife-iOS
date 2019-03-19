@@ -1180,7 +1180,7 @@ NodePointer Demangler::popFunctionParamLabels(NodePointer Type) {
         return LabelList;
     
     bool hasLabels = false;
-    for (unsigned long i = 0, n = ParameterType->getIndex(); i != n; ++i) {
+    for (unsigned long long i = 0, n = ParameterType->getIndex(); i != n; ++i) {
         auto Label = getLabel(Tuple, i);
         
         if (!Label)

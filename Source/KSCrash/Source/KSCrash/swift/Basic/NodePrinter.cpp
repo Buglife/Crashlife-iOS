@@ -817,7 +817,7 @@ static bool isExistentialType(NodePointer node) {
 unsigned NodePrinter::printFunctionSigSpecializationParam(NodePointer Node,
                                                           unsigned Idx) {
     NodePointer firstChild = Node->getChild(Idx);
-    unsigned long V = firstChild->getIndex();
+    unsigned long long V = firstChild->getIndex();
     auto K = FunctionSigSpecializationParamKind(V);
     switch (K) {
         case FunctionSigSpecializationParamKind::BoxToValue:
@@ -1950,8 +1950,8 @@ return nullptr;
                 if (depth != 0)
                     Printer << "><";
                 
-                unsigned long count = Node->getChild(depth)->getIndex();
-                for (unsigned index = 0; index < count; ++index) {
+                unsigned long long count = Node->getChild(depth)->getIndex();
+                for (unsigned long long index = 0; index < count; ++index) {
                     if (index != 0)
                         Printer << ", ";
                     // Limit the number of printed generic parameters. In practice this

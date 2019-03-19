@@ -795,12 +795,14 @@ payload)
             Node::IndexType length;
             if (!demangleNatural(length))
                 return nullptr;
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wshorten-64-to-32"
             if (!Mangled.hasAtLeast(length))
                 return nullptr;
             
             StringRef identifier = Mangled.slice(length);
             Mangled.advanceOffset(length);
-            
+#pragma clang diagnostic pop
             // Decode Unicode identifiers.
             identifier = decode(identifier);
             if (identifier.empty())
@@ -905,9 +907,12 @@ payload)
             Node::IndexType index_sub;
             if (!demangleIndex(index_sub))
                 return nullptr;
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wshorten-64-to-32"
             if (index_sub >= Substitutions.size())
                 return nullptr;
             return Substitutions[index_sub];
+#pragma clang diagnostic pop
         }
         
         NodePointer demangleModule() {
