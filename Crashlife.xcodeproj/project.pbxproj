@@ -204,11 +204,7 @@
 		BC8363252214E786001C45B3 /* CRLFReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8363212214E785001C45B3 /* CRLFReachability.m */; };
 		BC8363262214E786001C45B3 /* CRLFDeviceInfoProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8363222214E786001C45B3 /* CRLFDeviceInfoProvider.m */; };
 		BC83633422156A85001C45B3 /* Platform.h in Headers */ = {isa = PBXBuildFile; fileRef = BC83632E22156A84001C45B3 /* Platform.h */; };
-		BC83633522156A85001C45B3 /* ReferenceStorage.def in Resources */ = {isa = PBXBuildFile; fileRef = BC83632F22156A84001C45B3 /* ReferenceStorage.def */; };
 		BC83633622156A85001C45B3 /* SwiftDemangle.h in Headers */ = {isa = PBXBuildFile; fileRef = BC83633022156A85001C45B3 /* SwiftDemangle.h */; };
-		BC83633722156A85001C45B3 /* ValueWitnessMangling.def in Resources */ = {isa = PBXBuildFile; fileRef = BC83633122156A85001C45B3 /* ValueWitnessMangling.def */; };
-		BC83633822156A85001C45B3 /* DemangleNodes.def in Resources */ = {isa = PBXBuildFile; fileRef = BC83633222156A85001C45B3 /* DemangleNodes.def */; };
-		BC83633922156A85001C45B3 /* StandardTypesMangling.def in Resources */ = {isa = PBXBuildFile; fileRef = BC83633322156A85001C45B3 /* StandardTypesMangling.def */; };
 		BC83633B22156D3D001C45B3 /* Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC83633A22156D3D001C45B3 /* Context.cpp */; };
 		BC83633F22156DF2001C45B3 /* OldDemangler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC83633E22156DF1001C45B3 /* OldDemangler.cpp */; };
 		BC83634422157292001C45B3 /* ManglingUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC83634322157292001C45B3 /* ManglingUtils.cpp */; };
@@ -1052,10 +1048,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC83633722156A85001C45B3 /* ValueWitnessMangling.def in Resources */,
-				BC83633922156A85001C45B3 /* StandardTypesMangling.def in Resources */,
-				BC83633522156A85001C45B3 /* ReferenceStorage.def in Resources */,
-				BC83633822156A85001C45B3 /* DemangleNodes.def in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
