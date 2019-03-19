@@ -27,9 +27,6 @@ You can also find Crashlife for Android [here](https://github.com/buglife/crashl
 | ℹ️ | Captured footprints and logs, with info / warning / error levels |
 | 👩🏽‍💻 | Written in Objective-C, with full Swift support |
 
-## Demo
-
-To try the example app, you can either run `pod try Buglife` from your command line, OR clone this repository and open the Xcode project under the “Example” directory.
 
 ## Installation
 
