@@ -1,0 +1,16 @@
+PODS:
+  - Crashlife (1.0.0)
+
+DEPENDENCIES:
+  - Crashlife (from `../`)
+
+EXTERNAL SOURCES:
+  Crashlife:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Crashlife: fd4fe14e9bd9b7ebf38e63a961415b65b22f1b68
+
+PODFILE CHECKSUM: 5d8f21fc8db88d51a342dd24629a57388fb68eb9
+
+COCOAPODS: 1.6.1

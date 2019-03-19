@@ -1,0 +1,1350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60DE3015D5F3E0CBB684AC82 /* CRLFEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DE354CC7F58622D9B4B1BE /* CRLFEvent.h */; };
+		60DE3067395D829485EC2A21 /* CRLFNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DE3A4B40CCACCCE378532E /* CRLFNetworkManager.h */; };
+		60DE31A61757B876393EC219 /* CRLFClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DE39F1BDF596332D38490A /* CRLFClient.m */; };
+		60DE360CFBC3CF287C70D1DF /* CRLFClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DE34769557BECB6F05403E /* CRLFClient.h */; };
+		60DE36F06E5453A56A0098CE /* NSError+CRLFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DE37E59DFC3C2B7EA4BC59 /* NSError+CRLFAdditions.h */; };
+		60DE3820CB84D31817B8A6B2 /* CRLFNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DE373B0BB8B3D7A94F2FE4 /* CRLFNetworkManager.m */; };
+		60DE3A019F457DF7F4CE94C3 /* NSError+CRLFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DE39D4E0F80DB53F69073B /* NSError+CRLFAdditions.m */; };
+		60DE3D1977810CE1915FB941 /* CRLFEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DE37A9DA16F383D12C51BF /* CRLFEvent.m */; };
+		B7EAF9A61FC8DBA900196024 /* Crashlife.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EAF8DC1FC8DBA900196024 /* Crashlife.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7EAF9A71FC8DBA900196024 /* Crashlife.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EAF8DD1FC8DBA900196024 /* Crashlife.m */; };
+		BC055AF4220AD18800ED30E7 /* SwiftStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A55220AD18700ED30E7 /* SwiftStrings.h */; };
+		BC055AF5220AD18800ED30E7 /* Demangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC055A57220AD18700ED30E7 /* Demangle.cpp */; };
+		BC055AF6220AD18800ED30E7 /* Malloc.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A58220AD18700ED30E7 /* Malloc.h */; };
+		BC055AF7220AD18800ED30E7 /* DemangleNodes.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A59220AD18700ED30E7 /* DemangleNodes.h */; };
+		BC055AF8220AD18800ED30E7 /* Punycode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC055A5A220AD18700ED30E7 /* Punycode.cpp */; };
+		BC055AF9220AD18800ED30E7 /* Demangle.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A5B220AD18700ED30E7 /* Demangle.h */; };
+		BC055AFA220AD18800ED30E7 /* Punycode.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A5C220AD18700ED30E7 /* Punycode.h */; };
+		BC055AFB220AD18800ED30E7 /* Fallthrough.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A5D220AD18700ED30E7 /* Fallthrough.h */; };
+		BC055AFC220AD18800ED30E7 /* LLVM.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A5E220AD18700ED30E7 /* LLVM.h */; };
+		BC055AFE220AD18800ED30E7 /* CLKSCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055A61220AD18700ED30E7 /* CLKSCrash.m */; };
+		BC055AFF220AD18800ED30E7 /* CLKSCrashReportStore.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055A62220AD18700ED30E7 /* CLKSCrashReportStore.c */; };
+		BC055B00220AD18800ED30E7 /* CLKSCrashMonitor_Deadlock.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055A64220AD18700ED30E7 /* CLKSCrashMonitor_Deadlock.m */; };
+		BC055B01220AD18800ED30E7 /* CLKSCrashMonitorContext.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A65220AD18700ED30E7 /* CLKSCrashMonitorContext.h */; };
+		BC055B02220AD18800ED30E7 /* CLKSCrashMonitorType.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A66220AD18700ED30E7 /* CLKSCrashMonitorType.h */; };
+		BC055B03220AD18800ED30E7 /* CLKSCrashMonitor_System.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055A67220AD18700ED30E7 /* CLKSCrashMonitor_System.m */; };
+		BC055B04220AD18800ED30E7 /* CLKSCrashMonitor_Signal.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A68220AD18700ED30E7 /* CLKSCrashMonitor_Signal.h */; };
+		BC055B05220AD18800ED30E7 /* CLKSCrashMonitor_AppState.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055A69220AD18700ED30E7 /* CLKSCrashMonitor_AppState.c */; };
+		BC055B06220AD18800ED30E7 /* CLKSCrashMonitor_CPPException.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A6A220AD18700ED30E7 /* CLKSCrashMonitor_CPPException.h */; };
+		BC055B07220AD18800ED30E7 /* CLKSCrashMonitor_Zombie.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055A6B220AD18700ED30E7 /* CLKSCrashMonitor_Zombie.c */; };
+		BC055B08220AD18800ED30E7 /* CLKSCrashMonitor_NSException.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055A6C220AD18700ED30E7 /* CLKSCrashMonitor_NSException.m */; };
+		BC055B09220AD18800ED30E7 /* CLKSCrashMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A6D220AD18700ED30E7 /* CLKSCrashMonitor.h */; };
+		BC055B0A220AD18800ED30E7 /* CLKSCrashMonitor_MachException.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055A6E220AD18700ED30E7 /* CLKSCrashMonitor_MachException.c */; };
+		BC055B0B220AD18800ED30E7 /* CLKSCrashMonitor_User.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A6F220AD18700ED30E7 /* CLKSCrashMonitor_User.h */; };
+		BC055B0C220AD18800ED30E7 /* CLKSCrashMonitorType.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055A70220AD18700ED30E7 /* CLKSCrashMonitorType.c */; };
+		BC055B0D220AD18800ED30E7 /* CLKSCrashMonitor_Deadlock.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A71220AD18700ED30E7 /* CLKSCrashMonitor_Deadlock.h */; };
+		BC055B0E220AD18800ED30E7 /* CLKSCrashMonitor_Signal.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055A72220AD18700ED30E7 /* CLKSCrashMonitor_Signal.c */; };
+		BC055B0F220AD18800ED30E7 /* CLKSCrashMonitor_AppState.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A73220AD18700ED30E7 /* CLKSCrashMonitor_AppState.h */; };
+		BC055B10220AD18800ED30E7 /* CLKSCrashMonitor_System.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A74220AD18700ED30E7 /* CLKSCrashMonitor_System.h */; };
+		BC055B11220AD18800ED30E7 /* CLKSCrashMonitor_MachException.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A75220AD18700ED30E7 /* CLKSCrashMonitor_MachException.h */; };
+		BC055B12220AD18800ED30E7 /* CLKSCrashMonitor_User.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055A76220AD18700ED30E7 /* CLKSCrashMonitor_User.c */; };
+		BC055B13220AD18800ED30E7 /* CLKSCrashMonitor.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055A77220AD18700ED30E7 /* CLKSCrashMonitor.c */; };
+		BC055B14220AD18800ED30E7 /* CLKSCrashMonitor_NSException.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A78220AD18700ED30E7 /* CLKSCrashMonitor_NSException.h */; };
+		BC055B15220AD18800ED30E7 /* CLKSCrashMonitor_CPPException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC055A79220AD18700ED30E7 /* CLKSCrashMonitor_CPPException.cpp */; };
+		BC055B16220AD18800ED30E7 /* CLKSCrashMonitor_Zombie.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A7A220AD18700ED30E7 /* CLKSCrashMonitor_Zombie.h */; };
+		BC055B17220AD18800ED30E7 /* CLKSCrashReport.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A7B220AD18700ED30E7 /* CLKSCrashReport.h */; };
+		BC055B18220AD18800ED30E7 /* CLKSCrashReportWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A7C220AD18700ED30E7 /* CLKSCrashReportWriter.h */; };
+		BC055B19220AD18800ED30E7 /* CLKSSymbolicator.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A7E220AD18700ED30E7 /* CLKSSymbolicator.h */; };
+		BC055B1A220AD18800ED30E7 /* CLKSString.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A7F220AD18700ED30E7 /* CLKSString.h */; };
+		BC055B1B220AD18800ED30E7 /* CLKSDemangle_Swift.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC055A80220AD18700ED30E7 /* CLKSDemangle_Swift.cpp */; };
+		BC055B1C220AD18800ED30E7 /* NSError+CRLFSimpleConstructor.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055A81220AD18700ED30E7 /* NSError+CRLFSimpleConstructor.m */; };
+		BC055B1D220AD18800ED30E7 /* CLKSDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A82220AD18700ED30E7 /* CLKSDebug.h */; };
+		BC055B1E220AD18800ED30E7 /* CLKSCPU_Apple.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A83220AD18700ED30E7 /* CLKSCPU_Apple.h */; };
+		BC055B1F220AD18800ED30E7 /* CLKSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A84220AD18700ED30E7 /* CLKSLogger.h */; };
+		BC055B20220AD18800ED30E7 /* CLKSCPU_x86_32.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055A85220AD18700ED30E7 /* CLKSCPU_x86_32.c */; };
+		BC055B21220AD18800ED30E7 /* CLKSSignalInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A86220AD18700ED30E7 /* CLKSSignalInfo.h */; };
+		BC055B22220AD18800ED30E7 /* CLKSSysCtl.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A87220AD18700ED30E7 /* CLKSSysCtl.h */; };
+		BC055B23220AD18800ED30E7 /* CLKSFileUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055A88220AD18700ED30E7 /* CLKSFileUtils.c */; };
+		BC055B24220AD18800ED30E7 /* CLKSObjC.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055A89220AD18700ED30E7 /* CLKSObjC.c */; };
+		BC055B25220AD18800ED30E7 /* CLKSCPU_arm.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055A8A220AD18700ED30E7 /* CLKSCPU_arm.c */; };
+		BC055B26220AD18800ED30E7 /* CLKSStackCursor_SelfThread.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A8B220AD18700ED30E7 /* CLKSStackCursor_SelfThread.h */; };
+		BC055B27220AD18800ED30E7 /* CLKSCPU.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A8C220AD18700ED30E7 /* CLKSCPU.h */; };
+		BC055B28220AD18800ED30E7 /* CLKSDemangle_Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A8D220AD18700ED30E7 /* CLKSDemangle_Swift.h */; };
+		BC055B29220AD18800ED30E7 /* CLKSMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A8E220AD18700ED30E7 /* CLKSMemory.h */; };
+		BC055B2A220AD18800ED30E7 /* CLKSMachineContext.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055A8F220AD18700ED30E7 /* CLKSMachineContext.c */; };
+		BC055B2B220AD18800ED30E7 /* CLKSID.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A90220AD18700ED30E7 /* CLKSID.h */; };
+		BC055B2C220AD18800ED30E7 /* CLKSDemangle_CPP.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A91220AD18700ED30E7 /* CLKSDemangle_CPP.h */; };
+		BC055B2D220AD18800ED30E7 /* CLKSMachineContext_Apple.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A92220AD18700ED30E7 /* CLKSMachineContext_Apple.h */; };
+		BC055B2E220AD18800ED30E7 /* CLKSMach.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A93220AD18700ED30E7 /* CLKSMach.h */; };
+		BC055B2F220AD18800ED30E7 /* CLKSDynamicLinker.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055A94220AD18700ED30E7 /* CLKSDynamicLinker.c */; };
+		BC055B30220AD18800ED30E7 /* CLKSThread.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A95220AD18700ED30E7 /* CLKSThread.h */; };
+		BC055B31220AD18800ED30E7 /* CLKSObjCApple.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A96220AD18700ED30E7 /* CLKSObjCApple.h */; };
+		BC055B32220AD18800ED30E7 /* CLKSJSONCodecObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055A97220AD18700ED30E7 /* CLKSJSONCodecObjC.m */; };
+		BC055B33220AD18800ED30E7 /* CLKSStackCursor_Backtrace.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A98220AD18700ED30E7 /* CLKSStackCursor_Backtrace.h */; };
+		BC055B34220AD18800ED30E7 /* CLKSStackCursor.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055A99220AD18700ED30E7 /* CLKSStackCursor.c */; };
+		BC055B35220AD18800ED30E7 /* CLKSStackCursor_MachineContext.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055A9A220AD18700ED30E7 /* CLKSStackCursor_MachineContext.c */; };
+		BC055B36220AD18800ED30E7 /* CLKSJSONCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055A9B220AD18700ED30E7 /* CLKSJSONCodec.h */; };
+		BC055B37220AD18800ED30E7 /* CLKSDate.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055A9C220AD18700ED30E7 /* CLKSDate.c */; };
+		BC055B38220AD18800ED30E7 /* CLKSDemangle_CPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC055A9D220AD18700ED30E7 /* CLKSDemangle_CPP.cpp */; };
+		BC055B39220AD18800ED30E7 /* CLKSString.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055A9E220AD18700ED30E7 /* CLKSString.c */; };
+		BC055B3A220AD18800ED30E7 /* CLKSCPU_x86_64.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055A9F220AD18700ED30E7 /* CLKSCPU_x86_64.c */; };
+		BC055B3B220AD18800ED30E7 /* CLKSSymbolicator.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055AA0220AD18700ED30E7 /* CLKSSymbolicator.c */; };
+		BC055B3C220AD18800ED30E7 /* CLKSLogger.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055AA1220AD18700ED30E7 /* CLKSLogger.c */; };
+		BC055B3D220AD18800ED30E7 /* CLKSSignalInfo.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055AA2220AD18700ED30E7 /* CLKSSignalInfo.c */; };
+		BC055B3E220AD18800ED30E7 /* NSError+CRLFSimpleConstructor.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AA3220AD18700ED30E7 /* NSError+CRLFSimpleConstructor.h */; };
+		BC055B3F220AD18800ED30E7 /* CLKSDebug.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055AA4220AD18700ED30E7 /* CLKSDebug.c */; };
+		BC055B40220AD18800ED30E7 /* CLKSMemory.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055AA5220AD18700ED30E7 /* CLKSMemory.c */; };
+		BC055B41220AD18800ED30E7 /* CLKSCPU.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055AA6220AD18700ED30E7 /* CLKSCPU.c */; };
+		BC055B42220AD18800ED30E7 /* CLKSStackCursor_SelfThread.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055AA7220AD18700ED30E7 /* CLKSStackCursor_SelfThread.c */; };
+		BC055B43220AD18800ED30E7 /* CLKSObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AA8220AD18700ED30E7 /* CLKSObjC.h */; };
+		BC055B44220AD18800ED30E7 /* CLKSFileUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AA9220AD18700ED30E7 /* CLKSFileUtils.h */; };
+		BC055B45220AD18800ED30E7 /* CLKSSysCtl.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055AAA220AD18700ED30E7 /* CLKSSysCtl.c */; };
+		BC055B46220AD18800ED30E7 /* CLKSDate.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AAB220AD18700ED30E7 /* CLKSDate.h */; };
+		BC055B47220AD18800ED30E7 /* CLKSJSONCodec.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055AAC220AD18700ED30E7 /* CLKSJSONCodec.c */; };
+		BC055B48220AD18800ED30E7 /* CLKSStackCursor_MachineContext.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AAD220AD18700ED30E7 /* CLKSStackCursor_MachineContext.h */; };
+		BC055B49220AD18800ED30E7 /* CLKSJSONCodecObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AAE220AD18700ED30E7 /* CLKSJSONCodecObjC.h */; };
+		BC055B4A220AD18800ED30E7 /* CLKSThread.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055AAF220AD18700ED30E7 /* CLKSThread.c */; };
+		BC055B4B220AD18800ED30E7 /* CLKSStackCursor.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AB0220AD18700ED30E7 /* CLKSStackCursor.h */; };
+		BC055B4C220AD18800ED30E7 /* CLKSStackCursor_Backtrace.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055AB1220AD18700ED30E7 /* CLKSStackCursor_Backtrace.c */; };
+		BC055B4D220AD18800ED30E7 /* CLKSMach.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055AB2220AD18700ED30E7 /* CLKSMach.c */; };
+		BC055B4E220AD18800ED30E7 /* CLKSDynamicLinker.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AB3220AD18700ED30E7 /* CLKSDynamicLinker.h */; };
+		BC055B4F220AD18800ED30E7 /* CLKSCPU_arm64.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055AB4220AD18700ED30E7 /* CLKSCPU_arm64.c */; };
+		BC055B50220AD18800ED30E7 /* CLKSMachineContext.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AB5220AD18700ED30E7 /* CLKSMachineContext.h */; };
+		BC055B51220AD18800ED30E7 /* CLKSID.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055AB6220AD18700ED30E7 /* CLKSID.c */; };
+		BC055B52220AD18800ED30E7 /* CLKSCrashC.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AB7220AD18700ED30E7 /* CLKSCrashC.h */; };
+		BC055B53220AD18800ED30E7 /* CLKSCrashCachedData.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055AB8220AD18700ED30E7 /* CLKSCrashCachedData.c */; };
+		BC055B54220AD18800ED30E7 /* CLKSSystemCapabilities.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AB9220AD18700ED30E7 /* CLKSSystemCapabilities.h */; };
+		BC055B55220AD18800ED30E7 /* CLKSCrashReportVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055ABA220AD18700ED30E7 /* CLKSCrashReportVersion.h */; };
+		BC055B56220AD18800ED30E7 /* CLKSCrashReportFixer.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055ABB220AD18700ED30E7 /* CLKSCrashReportFixer.h */; };
+		BC055B57220AD18800ED30E7 /* CLKSCrashDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055ABC220AD18700ED30E7 /* CLKSCrashDoctor.m */; };
+		BC055B58220AD18800ED30E7 /* CLKSCrashReport.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055ABD220AD18700ED30E7 /* CLKSCrashReport.c */; };
+		BC055B59220AD18800ED30E7 /* CLKSCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055ABE220AD18700ED30E7 /* CLKSCrash.h */; };
+		BC055B5A220AD18800ED30E7 /* CLKSCrashReportStore.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055ABF220AD18700ED30E7 /* CLKSCrashReportStore.h */; };
+		BC055B5B220AD18800ED30E7 /* CLKSCrashCachedData.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AC0220AD18700ED30E7 /* CLKSCrashCachedData.h */; };
+		BC055B5C220AD18800ED30E7 /* CLKSCrashC.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055AC1220AD18700ED30E7 /* CLKSCrashC.c */; };
+		BC055B5D220AD18800ED30E7 /* CLKSCrashReportFields.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AC2220AD18700ED30E7 /* CLKSCrashReportFields.h */; };
+		BC055B5E220AD18800ED30E7 /* CLKSCrashDoctor.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AC3220AD18700ED30E7 /* CLKSCrashDoctor.h */; };
+		BC055B5F220AD18800ED30E7 /* CLKSCrashReportFixer.c in Sources */ = {isa = PBXBuildFile; fileRef = BC055AC4220AD18700ED30E7 /* CLKSCrashReportFixer.c */; };
+		BC055B60220AD18800ED30E7 /* CLKSCrashReportFilterAppleFmt.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AC7220AD18800ED30E7 /* CLKSCrashReportFilterAppleFmt.h */; };
+		BC055B61220AD18800ED30E7 /* Container+CRLFDeepSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055AC9220AD18800ED30E7 /* Container+CRLFDeepSearch.m */; };
+		BC055B62220AD18800ED30E7 /* NSData+CRLFGZip.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055ACA220AD18800ED30E7 /* NSData+CRLFGZip.h */; };
+		BC055B63220AD18800ED30E7 /* Container+CRLFDeepSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055ACB220AD18800ED30E7 /* Container+CRLFDeepSearch.h */; };
+		BC055B64220AD18800ED30E7 /* NSData+CRLFGZip.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055ACC220AD18800ED30E7 /* NSData+CRLFGZip.m */; };
+		BC055B65220AD18800ED30E7 /* CLKSVarArgs.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055ACD220AD18800ED30E7 /* CLKSVarArgs.h */; };
+		BC055B66220AD18800ED30E7 /* CLKSCrashReportFilterStringify.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055ACE220AD18800ED30E7 /* CLKSCrashReportFilterStringify.h */; };
+		BC055B67220AD18800ED30E7 /* CLKSCrashReportFilterSets.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055ACF220AD18800ED30E7 /* CLKSCrashReportFilterSets.m */; };
+		BC055B68220AD18800ED30E7 /* CLKSCrashReportFilterGZip.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AD0220AD18800ED30E7 /* CLKSCrashReportFilterGZip.h */; };
+		BC055B69220AD18800ED30E7 /* CLKSCrashReportFilterJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055AD1220AD18800ED30E7 /* CLKSCrashReportFilterJSON.m */; };
+		BC055B6A220AD18800ED30E7 /* CLKSCrashReportFilterAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AD2220AD18800ED30E7 /* CLKSCrashReportFilterAlert.h */; };
+		BC055B6B220AD18800ED30E7 /* CLKSCrashReportFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AD3220AD18800ED30E7 /* CLKSCrashReportFilter.h */; };
+		BC055B6C220AD18800ED30E7 /* CLKSCrashReportFilterBasic.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AD4220AD18800ED30E7 /* CLKSCrashReportFilterBasic.h */; };
+		BC055B6D220AD18800ED30E7 /* CLKSCrashReportFilterAppleFmt.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055AD5220AD18800ED30E7 /* CLKSCrashReportFilterAppleFmt.m */; };
+		BC055B6E220AD18800ED30E7 /* CLKSCrashReportFilterAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055AD6220AD18800ED30E7 /* CLKSCrashReportFilterAlert.m */; };
+		BC055B6F220AD18800ED30E7 /* CLKSCrashReportFilterJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AD7220AD18800ED30E7 /* CLKSCrashReportFilterJSON.h */; };
+		BC055B70220AD18800ED30E7 /* CLKSCrashReportFilterGZip.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055AD8220AD18800ED30E7 /* CLKSCrashReportFilterGZip.m */; };
+		BC055B71220AD18800ED30E7 /* CLKSCrashReportFilterSets.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AD9220AD18800ED30E7 /* CLKSCrashReportFilterSets.h */; };
+		BC055B72220AD18800ED30E7 /* CLKSCrashReportFilterStringify.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055ADA220AD18800ED30E7 /* CLKSCrashReportFilterStringify.m */; };
+		BC055B73220AD18800ED30E7 /* CLKSCrashReportFilterBasic.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055ADB220AD18800ED30E7 /* CLKSCrashReportFilterBasic.m */; };
+		BC055B74220AD18800ED30E7 /* CLKSHTTPRequestSender.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055ADD220AD18800ED30E7 /* CLKSHTTPRequestSender.h */; };
+		BC055B75220AD18800ED30E7 /* NSMutableData+AppendUTF8.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055ADE220AD18800ED30E7 /* NSMutableData+AppendUTF8.h */; };
+		BC055B76220AD18800ED30E7 /* CLKSHTTPMultipartPostBody.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055ADF220AD18800ED30E7 /* CLKSHTTPMultipartPostBody.h */; };
+		BC055B77220AD18800ED30E7 /* NSString+URLEncode.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AE0220AD18800ED30E7 /* NSString+URLEncode.h */; };
+		BC055B78220AD18800ED30E7 /* CLKSCString.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AE1220AD18800ED30E7 /* CLKSCString.h */; };
+		BC055B79220AD18800ED30E7 /* CLKSReachabilityKSCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055AE2220AD18800ED30E7 /* CLKSReachabilityKSCrash.m */; };
+		BC055B7A220AD18800ED30E7 /* CLKSHTTPMultipartPostBody.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055AE3220AD18800ED30E7 /* CLKSHTTPMultipartPostBody.m */; };
+		BC055B7B220AD18800ED30E7 /* NSMutableData+AppendUTF8.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055AE4220AD18800ED30E7 /* NSMutableData+AppendUTF8.m */; };
+		BC055B7C220AD18800ED30E7 /* CLKSHTTPRequestSender.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055AE5220AD18800ED30E7 /* CLKSHTTPRequestSender.m */; };
+		BC055B7D220AD18800ED30E7 /* CLKSCString.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055AE6220AD18800ED30E7 /* CLKSCString.m */; };
+		BC055B7E220AD18800ED30E7 /* NSString+URLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055AE7220AD18800ED30E7 /* NSString+URLEncode.m */; };
+		BC055B7F220AD18800ED30E7 /* CLKSReachabilityKSCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AE8220AD18800ED30E7 /* CLKSReachabilityKSCrash.h */; };
+		BC055B80220AD18800ED30E7 /* CLKSCrashReportSinkConsole.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AEA220AD18800ED30E7 /* CLKSCrashReportSinkConsole.h */; };
+		BC055B81220AD18800ED30E7 /* CLKSCrashReportSinkStandard.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AEB220AD18800ED30E7 /* CLKSCrashReportSinkStandard.h */; };
+		BC055B82220AD18800ED30E7 /* CLKSCrashReportSinkEMail.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AEC220AD18800ED30E7 /* CLKSCrashReportSinkEMail.h */; };
+		BC055B83220AD18800ED30E7 /* CLKSCrashReportSinkVictory.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AED220AD18800ED30E7 /* CLKSCrashReportSinkVictory.h */; };
+		BC055B84220AD18800ED30E7 /* CLKSCrashReportSinkQuincyHockey.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055AEE220AD18800ED30E7 /* CLKSCrashReportSinkQuincyHockey.h */; };
+		BC055B85220AD18800ED30E7 /* CLKSCrashReportSinkConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055AEF220AD18800ED30E7 /* CLKSCrashReportSinkConsole.m */; };
+		BC055B86220AD18800ED30E7 /* CLKSCrashReportSinkVictory.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055AF0220AD18800ED30E7 /* CLKSCrashReportSinkVictory.m */; };
+		BC055B87220AD18800ED30E7 /* CLKSCrashReportSinkStandard.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055AF1220AD18800ED30E7 /* CLKSCrashReportSinkStandard.m */; };
+		BC055B88220AD18800ED30E7 /* CLKSCrashReportSinkEMail.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055AF2220AD18800ED30E7 /* CLKSCrashReportSinkEMail.m */; };
+		BC055B89220AD18800ED30E7 /* CLKSCrashReportSinkQuincyHockey.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055AF3220AD18800ED30E7 /* CLKSCrashReportSinkQuincyHockey.m */; };
+		BC055B9B220AD2AA00ED30E7 /* None.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055B90220AD2A900ED30E7 /* None.h */; };
+		BC055B9C220AD2AA00ED30E7 /* Optional.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055B91220AD2A900ED30E7 /* Optional.h */; };
+		BC055B9D220AD2AA00ED30E7 /* StringRef.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055B92220AD2A900ED30E7 /* StringRef.h */; };
+		BC055B9E220AD2AA00ED30E7 /* llvm-config.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055B94220AD2AA00ED30E7 /* llvm-config.h */; };
+		BC055B9F220AD2AA00ED30E7 /* Casting.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055B96220AD2AA00ED30E7 /* Casting.h */; };
+		BC055BA0220AD2AA00ED30E7 /* AlignOf.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055B97220AD2AA00ED30E7 /* AlignOf.h */; };
+		BC055BA1220AD2AA00ED30E7 /* Compiler.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055B98220AD2AA00ED30E7 /* Compiler.h */; };
+		BC055BA2220AD2AA00ED30E7 /* type_traits.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055B99220AD2AA00ED30E7 /* type_traits.h */; };
+		BC055BA8220BDE4D00ED30E7 /* CRLFAppInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055BA6220BDE4D00ED30E7 /* CRLFAppInfo.h */; };
+		BC055BA9220BDE4D00ED30E7 /* CRLFAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055BA7220BDE4D00ED30E7 /* CRLFAppInfo.m */; };
+		BC055BAD220BE02300ED30E7 /* CRLFAppInfoProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = BC055BAB220BE02300ED30E7 /* CRLFAppInfoProvider.h */; };
+		BC055BAE220BE02300ED30E7 /* CRLFAppInfoProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BC055BAC220BE02300ED30E7 /* CRLFAppInfoProvider.m */; };
+		BC83630A2214E777001C45B3 /* CRLFMachException.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8362F52214E775001C45B3 /* CRLFMachException.h */; };
+		BC83630B2214E777001C45B3 /* CRLFBinaryImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8362F62214E775001C45B3 /* CRLFBinaryImage.m */; };
+		BC83630C2214E777001C45B3 /* CRLFCrashReport.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8362F72214E776001C45B3 /* CRLFCrashReport.h */; };
+		BC83630D2214E777001C45B3 /* CRLFDeviceBatteryState.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8362F82214E776001C45B3 /* CRLFDeviceBatteryState.h */; };
+		BC83630E2214E777001C45B3 /* CRLFTelephonyNetworkInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8362F92214E776001C45B3 /* CRLFTelephonyNetworkInfo.h */; };
+		BC83630F2214E777001C45B3 /* CRLFTelephonyNetworkInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8362FA2214E776001C45B3 /* CRLFTelephonyNetworkInfo.m */; };
+		BC8363102214E777001C45B3 /* CRLFDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8362FB2214E776001C45B3 /* CRLFDeviceInfo.h */; };
+		BC8363112214E777001C45B3 /* CRLFDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8362FC2214E776001C45B3 /* CRLFDeviceInfo.m */; };
+		BC8363122214E777001C45B3 /* CRLFSignalException.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8362FD2214E776001C45B3 /* CRLFSignalException.m */; };
+		BC8363132214E777001C45B3 /* CRLFThread.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8362FE2214E776001C45B3 /* CRLFThread.h */; };
+		BC8363142214E777001C45B3 /* CRLFStackFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8362FF2214E776001C45B3 /* CRLFStackFrame.h */; };
+		BC8363152214E777001C45B3 /* CRLFMachException.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8363002214E776001C45B3 /* CRLFMachException.m */; };
+		BC8363162214E777001C45B3 /* CRLFFootprint.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8363012214E776001C45B3 /* CRLFFootprint.h */; };
+		BC8363172214E777001C45B3 /* CRLFThread.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8363022214E776001C45B3 /* CRLFThread.m */; };
+		BC8363182214E777001C45B3 /* CRLFFootprint.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8363032214E776001C45B3 /* CRLFFootprint.m */; };
+		BC8363192214E777001C45B3 /* CRLFCrashError.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8363042214E777001C45B3 /* CRLFCrashError.m */; };
+		BC83631A2214E777001C45B3 /* CRLFStackFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8363052214E777001C45B3 /* CRLFStackFrame.m */; };
+		BC83631B2214E777001C45B3 /* CRLFCrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8363062214E777001C45B3 /* CRLFCrashReport.m */; };
+		BC83631C2214E777001C45B3 /* CRLFCrashError.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8363072214E777001C45B3 /* CRLFCrashError.h */; };
+		BC83631D2214E777001C45B3 /* CRLFBinaryImage.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8363082214E777001C45B3 /* CRLFBinaryImage.h */; };
+		BC83631E2214E777001C45B3 /* CRLFSignalException.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8363092214E777001C45B3 /* CRLFSignalException.h */; };
+		BC8363232214E786001C45B3 /* CRLFReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = BC83631F2214E785001C45B3 /* CRLFReachability.h */; };
+		BC8363242214E786001C45B3 /* CRLFDeviceInfoProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8363202214E785001C45B3 /* CRLFDeviceInfoProvider.h */; };
+		BC8363252214E786001C45B3 /* CRLFReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8363212214E785001C45B3 /* CRLFReachability.m */; };
+		BC8363262214E786001C45B3 /* CRLFDeviceInfoProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8363222214E786001C45B3 /* CRLFDeviceInfoProvider.m */; };
+		BC83633422156A85001C45B3 /* Platform.h in Headers */ = {isa = PBXBuildFile; fileRef = BC83632E22156A84001C45B3 /* Platform.h */; };
+		BC83633522156A85001C45B3 /* ReferenceStorage.def in Resources */ = {isa = PBXBuildFile; fileRef = BC83632F22156A84001C45B3 /* ReferenceStorage.def */; };
+		BC83633622156A85001C45B3 /* SwiftDemangle.h in Headers */ = {isa = PBXBuildFile; fileRef = BC83633022156A85001C45B3 /* SwiftDemangle.h */; };
+		BC83633722156A85001C45B3 /* ValueWitnessMangling.def in Resources */ = {isa = PBXBuildFile; fileRef = BC83633122156A85001C45B3 /* ValueWitnessMangling.def */; };
+		BC83633822156A85001C45B3 /* DemangleNodes.def in Resources */ = {isa = PBXBuildFile; fileRef = BC83633222156A85001C45B3 /* DemangleNodes.def */; };
+		BC83633922156A85001C45B3 /* StandardTypesMangling.def in Resources */ = {isa = PBXBuildFile; fileRef = BC83633322156A85001C45B3 /* StandardTypesMangling.def */; };
+		BC83633B22156D3D001C45B3 /* Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC83633A22156D3D001C45B3 /* Context.cpp */; };
+		BC83633F22156DF2001C45B3 /* OldDemangler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC83633E22156DF1001C45B3 /* OldDemangler.cpp */; };
+		BC83634422157292001C45B3 /* ManglingUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC83634322157292001C45B3 /* ManglingUtils.cpp */; };
+		BC836346221573EB001C45B3 /* Demangler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC836345221573EB001C45B3 /* Demangler.cpp */; };
+		BC8363482215748F001C45B3 /* NodePrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC8363472215748F001C45B3 /* NodePrinter.cpp */; };
+		BCA18D4722408596007F6FF1 /* NSBundle+CRLFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = BCA18D4522408596007F6FF1 /* NSBundle+CRLFAdditions.h */; };
+		BCA18D4822408596007F6FF1 /* NSBundle+CRLFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA18D4622408596007F6FF1 /* NSBundle+CRLFAdditions.m */; };
+		BCC7BCCC220AC3E300CD4698 /* CRLFAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC7BCCA220AC3E300CD4698 /* CRLFAttribute.h */; };
+		BCC7BCCD220AC3E300CD4698 /* CRLFAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC7BCCB220AC3E300CD4698 /* CRLFAttribute.m */; };
+		BCC7BCD0220AC41300CD4698 /* NSMutableDictionary+CRLFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC7BCCE220AC41300CD4698 /* NSMutableDictionary+CRLFAdditions.m */; };
+		BCC7BCD1220AC41300CD4698 /* NSMutableDictionary+CRLFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC7BCCF220AC41300CD4698 /* NSMutableDictionary+CRLFAdditions.h */; };
+		BCC7BCD4220AC4C200CD4698 /* CRLFCompatibilityUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC7BCD2220AC4C200CD4698 /* CRLFCompatibilityUtils.m */; };
+		BCC7BCD5220AC4C200CD4698 /* CRLFCompatibilityUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC7BCD3220AC4C200CD4698 /* CRLFCompatibilityUtils.h */; };
+		BCC7BCD7220AC50200CD4698 /* CRLFMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC7BCD6220AC50200CD4698 /* CRLFMacros.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		60DE34769557BECB6F05403E /* CRLFClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFClient.h; sourceTree = "<group>"; };
+		60DE354CC7F58622D9B4B1BE /* CRLFEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFEvent.h; sourceTree = "<group>"; };
+		60DE373B0BB8B3D7A94F2FE4 /* CRLFNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFNetworkManager.m; sourceTree = "<group>"; };
+		60DE37A9DA16F383D12C51BF /* CRLFEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFEvent.m; sourceTree = "<group>"; };
+		60DE37E59DFC3C2B7EA4BC59 /* NSError+CRLFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+CRLFAdditions.h"; sourceTree = "<group>"; };
+		60DE39D4E0F80DB53F69073B /* NSError+CRLFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+CRLFAdditions.m"; sourceTree = "<group>"; };
+		60DE39F1BDF596332D38490A /* CRLFClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFClient.m; sourceTree = "<group>"; };
+		60DE3A4B40CCACCCE378532E /* CRLFNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFNetworkManager.h; sourceTree = "<group>"; };
+		B7EAF7181FC8DAB000196024 /* Crashlife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Crashlife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7EAF8DC1FC8DBA900196024 /* Crashlife.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crashlife.h; sourceTree = "<group>"; };
+		B7EAF8DD1FC8DBA900196024 /* Crashlife.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Crashlife.m; sourceTree = "<group>"; };
+		BC055A55220AD18700ED30E7 /* SwiftStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftStrings.h; sourceTree = "<group>"; };
+		BC055A57220AD18700ED30E7 /* Demangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Demangle.cpp; sourceTree = "<group>"; };
+		BC055A58220AD18700ED30E7 /* Malloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Malloc.h; sourceTree = "<group>"; };
+		BC055A59220AD18700ED30E7 /* DemangleNodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemangleNodes.h; sourceTree = "<group>"; };
+		BC055A5A220AD18700ED30E7 /* Punycode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Punycode.cpp; sourceTree = "<group>"; };
+		BC055A5B220AD18700ED30E7 /* Demangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demangle.h; sourceTree = "<group>"; };
+		BC055A5C220AD18700ED30E7 /* Punycode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Punycode.h; sourceTree = "<group>"; };
+		BC055A5D220AD18700ED30E7 /* Fallthrough.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fallthrough.h; sourceTree = "<group>"; };
+		BC055A5E220AD18700ED30E7 /* LLVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLVM.h; sourceTree = "<group>"; };
+		BC055A61220AD18700ED30E7 /* CLKSCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSCrash.m; sourceTree = "<group>"; };
+		BC055A62220AD18700ED30E7 /* CLKSCrashReportStore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSCrashReportStore.c; sourceTree = "<group>"; };
+		BC055A64220AD18700ED30E7 /* CLKSCrashMonitor_Deadlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSCrashMonitor_Deadlock.m; sourceTree = "<group>"; };
+		BC055A65220AD18700ED30E7 /* CLKSCrashMonitorContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashMonitorContext.h; sourceTree = "<group>"; };
+		BC055A66220AD18700ED30E7 /* CLKSCrashMonitorType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashMonitorType.h; sourceTree = "<group>"; };
+		BC055A67220AD18700ED30E7 /* CLKSCrashMonitor_System.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSCrashMonitor_System.m; sourceTree = "<group>"; };
+		BC055A68220AD18700ED30E7 /* CLKSCrashMonitor_Signal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashMonitor_Signal.h; sourceTree = "<group>"; };
+		BC055A69220AD18700ED30E7 /* CLKSCrashMonitor_AppState.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSCrashMonitor_AppState.c; sourceTree = "<group>"; };
+		BC055A6A220AD18700ED30E7 /* CLKSCrashMonitor_CPPException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashMonitor_CPPException.h; sourceTree = "<group>"; };
+		BC055A6B220AD18700ED30E7 /* CLKSCrashMonitor_Zombie.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSCrashMonitor_Zombie.c; sourceTree = "<group>"; };
+		BC055A6C220AD18700ED30E7 /* CLKSCrashMonitor_NSException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSCrashMonitor_NSException.m; sourceTree = "<group>"; };
+		BC055A6D220AD18700ED30E7 /* CLKSCrashMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashMonitor.h; sourceTree = "<group>"; };
+		BC055A6E220AD18700ED30E7 /* CLKSCrashMonitor_MachException.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSCrashMonitor_MachException.c; sourceTree = "<group>"; };
+		BC055A6F220AD18700ED30E7 /* CLKSCrashMonitor_User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashMonitor_User.h; sourceTree = "<group>"; };
+		BC055A70220AD18700ED30E7 /* CLKSCrashMonitorType.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSCrashMonitorType.c; sourceTree = "<group>"; };
+		BC055A71220AD18700ED30E7 /* CLKSCrashMonitor_Deadlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashMonitor_Deadlock.h; sourceTree = "<group>"; };
+		BC055A72220AD18700ED30E7 /* CLKSCrashMonitor_Signal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSCrashMonitor_Signal.c; sourceTree = "<group>"; };
+		BC055A73220AD18700ED30E7 /* CLKSCrashMonitor_AppState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashMonitor_AppState.h; sourceTree = "<group>"; };
+		BC055A74220AD18700ED30E7 /* CLKSCrashMonitor_System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashMonitor_System.h; sourceTree = "<group>"; };
+		BC055A75220AD18700ED30E7 /* CLKSCrashMonitor_MachException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashMonitor_MachException.h; sourceTree = "<group>"; };
+		BC055A76220AD18700ED30E7 /* CLKSCrashMonitor_User.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSCrashMonitor_User.c; sourceTree = "<group>"; };
+		BC055A77220AD18700ED30E7 /* CLKSCrashMonitor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSCrashMonitor.c; sourceTree = "<group>"; };
+		BC055A78220AD18700ED30E7 /* CLKSCrashMonitor_NSException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashMonitor_NSException.h; sourceTree = "<group>"; };
+		BC055A79220AD18700ED30E7 /* CLKSCrashMonitor_CPPException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CLKSCrashMonitor_CPPException.cpp; sourceTree = "<group>"; };
+		BC055A7A220AD18700ED30E7 /* CLKSCrashMonitor_Zombie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashMonitor_Zombie.h; sourceTree = "<group>"; };
+		BC055A7B220AD18700ED30E7 /* CLKSCrashReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashReport.h; sourceTree = "<group>"; };
+		BC055A7C220AD18700ED30E7 /* CLKSCrashReportWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashReportWriter.h; sourceTree = "<group>"; };
+		BC055A7E220AD18700ED30E7 /* CLKSSymbolicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSSymbolicator.h; sourceTree = "<group>"; };
+		BC055A7F220AD18700ED30E7 /* CLKSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSString.h; sourceTree = "<group>"; };
+		BC055A80220AD18700ED30E7 /* CLKSDemangle_Swift.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CLKSDemangle_Swift.cpp; sourceTree = "<group>"; };
+		BC055A81220AD18700ED30E7 /* NSError+CRLFSimpleConstructor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+CRLFSimpleConstructor.m"; sourceTree = "<group>"; };
+		BC055A82220AD18700ED30E7 /* CLKSDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSDebug.h; sourceTree = "<group>"; };
+		BC055A83220AD18700ED30E7 /* CLKSCPU_Apple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCPU_Apple.h; sourceTree = "<group>"; };
+		BC055A84220AD18700ED30E7 /* CLKSLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSLogger.h; sourceTree = "<group>"; };
+		BC055A85220AD18700ED30E7 /* CLKSCPU_x86_32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSCPU_x86_32.c; sourceTree = "<group>"; };
+		BC055A86220AD18700ED30E7 /* CLKSSignalInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSSignalInfo.h; sourceTree = "<group>"; };
+		BC055A87220AD18700ED30E7 /* CLKSSysCtl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSSysCtl.h; sourceTree = "<group>"; };
+		BC055A88220AD18700ED30E7 /* CLKSFileUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSFileUtils.c; sourceTree = "<group>"; };
+		BC055A89220AD18700ED30E7 /* CLKSObjC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSObjC.c; sourceTree = "<group>"; };
+		BC055A8A220AD18700ED30E7 /* CLKSCPU_arm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSCPU_arm.c; sourceTree = "<group>"; };
+		BC055A8B220AD18700ED30E7 /* CLKSStackCursor_SelfThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSStackCursor_SelfThread.h; sourceTree = "<group>"; };
+		BC055A8C220AD18700ED30E7 /* CLKSCPU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCPU.h; sourceTree = "<group>"; };
+		BC055A8D220AD18700ED30E7 /* CLKSDemangle_Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSDemangle_Swift.h; sourceTree = "<group>"; };
+		BC055A8E220AD18700ED30E7 /* CLKSMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSMemory.h; sourceTree = "<group>"; };
+		BC055A8F220AD18700ED30E7 /* CLKSMachineContext.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSMachineContext.c; sourceTree = "<group>"; };
+		BC055A90220AD18700ED30E7 /* CLKSID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSID.h; sourceTree = "<group>"; };
+		BC055A91220AD18700ED30E7 /* CLKSDemangle_CPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSDemangle_CPP.h; sourceTree = "<group>"; };
+		BC055A92220AD18700ED30E7 /* CLKSMachineContext_Apple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSMachineContext_Apple.h; sourceTree = "<group>"; };
+		BC055A93220AD18700ED30E7 /* CLKSMach.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSMach.h; sourceTree = "<group>"; };
+		BC055A94220AD18700ED30E7 /* CLKSDynamicLinker.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSDynamicLinker.c; sourceTree = "<group>"; };
+		BC055A95220AD18700ED30E7 /* CLKSThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSThread.h; sourceTree = "<group>"; };
+		BC055A96220AD18700ED30E7 /* CLKSObjCApple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSObjCApple.h; sourceTree = "<group>"; };
+		BC055A97220AD18700ED30E7 /* CLKSJSONCodecObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSJSONCodecObjC.m; sourceTree = "<group>"; };
+		BC055A98220AD18700ED30E7 /* CLKSStackCursor_Backtrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSStackCursor_Backtrace.h; sourceTree = "<group>"; };
+		BC055A99220AD18700ED30E7 /* CLKSStackCursor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSStackCursor.c; sourceTree = "<group>"; };
+		BC055A9A220AD18700ED30E7 /* CLKSStackCursor_MachineContext.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSStackCursor_MachineContext.c; sourceTree = "<group>"; };
+		BC055A9B220AD18700ED30E7 /* CLKSJSONCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSJSONCodec.h; sourceTree = "<group>"; };
+		BC055A9C220AD18700ED30E7 /* CLKSDate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSDate.c; sourceTree = "<group>"; };
+		BC055A9D220AD18700ED30E7 /* CLKSDemangle_CPP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CLKSDemangle_CPP.cpp; sourceTree = "<group>"; };
+		BC055A9E220AD18700ED30E7 /* CLKSString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSString.c; sourceTree = "<group>"; };
+		BC055A9F220AD18700ED30E7 /* CLKSCPU_x86_64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSCPU_x86_64.c; sourceTree = "<group>"; };
+		BC055AA0220AD18700ED30E7 /* CLKSSymbolicator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSSymbolicator.c; sourceTree = "<group>"; };
+		BC055AA1220AD18700ED30E7 /* CLKSLogger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSLogger.c; sourceTree = "<group>"; };
+		BC055AA2220AD18700ED30E7 /* CLKSSignalInfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSSignalInfo.c; sourceTree = "<group>"; };
+		BC055AA3220AD18700ED30E7 /* NSError+CRLFSimpleConstructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+CRLFSimpleConstructor.h"; sourceTree = "<group>"; };
+		BC055AA4220AD18700ED30E7 /* CLKSDebug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSDebug.c; sourceTree = "<group>"; };
+		BC055AA5220AD18700ED30E7 /* CLKSMemory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSMemory.c; sourceTree = "<group>"; };
+		BC055AA6220AD18700ED30E7 /* CLKSCPU.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSCPU.c; sourceTree = "<group>"; };
+		BC055AA7220AD18700ED30E7 /* CLKSStackCursor_SelfThread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSStackCursor_SelfThread.c; sourceTree = "<group>"; };
+		BC055AA8220AD18700ED30E7 /* CLKSObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSObjC.h; sourceTree = "<group>"; };
+		BC055AA9220AD18700ED30E7 /* CLKSFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSFileUtils.h; sourceTree = "<group>"; };
+		BC055AAA220AD18700ED30E7 /* CLKSSysCtl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSSysCtl.c; sourceTree = "<group>"; };
+		BC055AAB220AD18700ED30E7 /* CLKSDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSDate.h; sourceTree = "<group>"; };
+		BC055AAC220AD18700ED30E7 /* CLKSJSONCodec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSJSONCodec.c; sourceTree = "<group>"; };
+		BC055AAD220AD18700ED30E7 /* CLKSStackCursor_MachineContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSStackCursor_MachineContext.h; sourceTree = "<group>"; };
+		BC055AAE220AD18700ED30E7 /* CLKSJSONCodecObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSJSONCodecObjC.h; sourceTree = "<group>"; };
+		BC055AAF220AD18700ED30E7 /* CLKSThread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSThread.c; sourceTree = "<group>"; };
+		BC055AB0220AD18700ED30E7 /* CLKSStackCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSStackCursor.h; sourceTree = "<group>"; };
+		BC055AB1220AD18700ED30E7 /* CLKSStackCursor_Backtrace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSStackCursor_Backtrace.c; sourceTree = "<group>"; };
+		BC055AB2220AD18700ED30E7 /* CLKSMach.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSMach.c; sourceTree = "<group>"; };
+		BC055AB3220AD18700ED30E7 /* CLKSDynamicLinker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSDynamicLinker.h; sourceTree = "<group>"; };
+		BC055AB4220AD18700ED30E7 /* CLKSCPU_arm64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSCPU_arm64.c; sourceTree = "<group>"; };
+		BC055AB5220AD18700ED30E7 /* CLKSMachineContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSMachineContext.h; sourceTree = "<group>"; };
+		BC055AB6220AD18700ED30E7 /* CLKSID.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSID.c; sourceTree = "<group>"; };
+		BC055AB7220AD18700ED30E7 /* CLKSCrashC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashC.h; sourceTree = "<group>"; };
+		BC055AB8220AD18700ED30E7 /* CLKSCrashCachedData.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSCrashCachedData.c; sourceTree = "<group>"; };
+		BC055AB9220AD18700ED30E7 /* CLKSSystemCapabilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSSystemCapabilities.h; sourceTree = "<group>"; };
+		BC055ABA220AD18700ED30E7 /* CLKSCrashReportVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashReportVersion.h; sourceTree = "<group>"; };
+		BC055ABB220AD18700ED30E7 /* CLKSCrashReportFixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashReportFixer.h; sourceTree = "<group>"; };
+		BC055ABC220AD18700ED30E7 /* CLKSCrashDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSCrashDoctor.m; sourceTree = "<group>"; };
+		BC055ABD220AD18700ED30E7 /* CLKSCrashReport.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSCrashReport.c; sourceTree = "<group>"; };
+		BC055ABE220AD18700ED30E7 /* CLKSCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrash.h; sourceTree = "<group>"; };
+		BC055ABF220AD18700ED30E7 /* CLKSCrashReportStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashReportStore.h; sourceTree = "<group>"; };
+		BC055AC0220AD18700ED30E7 /* CLKSCrashCachedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashCachedData.h; sourceTree = "<group>"; };
+		BC055AC1220AD18700ED30E7 /* CLKSCrashC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSCrashC.c; sourceTree = "<group>"; };
+		BC055AC2220AD18700ED30E7 /* CLKSCrashReportFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashReportFields.h; sourceTree = "<group>"; };
+		BC055AC3220AD18700ED30E7 /* CLKSCrashDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashDoctor.h; sourceTree = "<group>"; };
+		BC055AC4220AD18700ED30E7 /* CLKSCrashReportFixer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CLKSCrashReportFixer.c; sourceTree = "<group>"; };
+		BC055AC7220AD18800ED30E7 /* CLKSCrashReportFilterAppleFmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashReportFilterAppleFmt.h; sourceTree = "<group>"; };
+		BC055AC9220AD18800ED30E7 /* Container+CRLFDeepSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Container+CRLFDeepSearch.m"; sourceTree = "<group>"; };
+		BC055ACA220AD18800ED30E7 /* NSData+CRLFGZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CRLFGZip.h"; sourceTree = "<group>"; };
+		BC055ACB220AD18800ED30E7 /* Container+CRLFDeepSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Container+CRLFDeepSearch.h"; sourceTree = "<group>"; };
+		BC055ACC220AD18800ED30E7 /* NSData+CRLFGZip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CRLFGZip.m"; sourceTree = "<group>"; };
+		BC055ACD220AD18800ED30E7 /* CLKSVarArgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSVarArgs.h; sourceTree = "<group>"; };
+		BC055ACE220AD18800ED30E7 /* CLKSCrashReportFilterStringify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashReportFilterStringify.h; sourceTree = "<group>"; };
+		BC055ACF220AD18800ED30E7 /* CLKSCrashReportFilterSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSCrashReportFilterSets.m; sourceTree = "<group>"; };
+		BC055AD0220AD18800ED30E7 /* CLKSCrashReportFilterGZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashReportFilterGZip.h; sourceTree = "<group>"; };
+		BC055AD1220AD18800ED30E7 /* CLKSCrashReportFilterJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSCrashReportFilterJSON.m; sourceTree = "<group>"; };
+		BC055AD2220AD18800ED30E7 /* CLKSCrashReportFilterAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashReportFilterAlert.h; sourceTree = "<group>"; };
+		BC055AD3220AD18800ED30E7 /* CLKSCrashReportFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashReportFilter.h; sourceTree = "<group>"; };
+		BC055AD4220AD18800ED30E7 /* CLKSCrashReportFilterBasic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashReportFilterBasic.h; sourceTree = "<group>"; };
+		BC055AD5220AD18800ED30E7 /* CLKSCrashReportFilterAppleFmt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSCrashReportFilterAppleFmt.m; sourceTree = "<group>"; };
+		BC055AD6220AD18800ED30E7 /* CLKSCrashReportFilterAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSCrashReportFilterAlert.m; sourceTree = "<group>"; };
+		BC055AD7220AD18800ED30E7 /* CLKSCrashReportFilterJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashReportFilterJSON.h; sourceTree = "<group>"; };
+		BC055AD8220AD18800ED30E7 /* CLKSCrashReportFilterGZip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSCrashReportFilterGZip.m; sourceTree = "<group>"; };
+		BC055AD9220AD18800ED30E7 /* CLKSCrashReportFilterSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashReportFilterSets.h; sourceTree = "<group>"; };
+		BC055ADA220AD18800ED30E7 /* CLKSCrashReportFilterStringify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSCrashReportFilterStringify.m; sourceTree = "<group>"; };
+		BC055ADB220AD18800ED30E7 /* CLKSCrashReportFilterBasic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSCrashReportFilterBasic.m; sourceTree = "<group>"; };
+		BC055ADD220AD18800ED30E7 /* CLKSHTTPRequestSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSHTTPRequestSender.h; sourceTree = "<group>"; };
+		BC055ADE220AD18800ED30E7 /* NSMutableData+AppendUTF8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+AppendUTF8.h"; sourceTree = "<group>"; };
+		BC055ADF220AD18800ED30E7 /* CLKSHTTPMultipartPostBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSHTTPMultipartPostBody.h; sourceTree = "<group>"; };
+		BC055AE0220AD18800ED30E7 /* NSString+URLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncode.h"; sourceTree = "<group>"; };
+		BC055AE1220AD18800ED30E7 /* CLKSCString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCString.h; sourceTree = "<group>"; };
+		BC055AE2220AD18800ED30E7 /* CLKSReachabilityKSCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSReachabilityKSCrash.m; sourceTree = "<group>"; };
+		BC055AE3220AD18800ED30E7 /* CLKSHTTPMultipartPostBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSHTTPMultipartPostBody.m; sourceTree = "<group>"; };
+		BC055AE4220AD18800ED30E7 /* NSMutableData+AppendUTF8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+AppendUTF8.m"; sourceTree = "<group>"; };
+		BC055AE5220AD18800ED30E7 /* CLKSHTTPRequestSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSHTTPRequestSender.m; sourceTree = "<group>"; };
+		BC055AE6220AD18800ED30E7 /* CLKSCString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSCString.m; sourceTree = "<group>"; };
+		BC055AE7220AD18800ED30E7 /* NSString+URLEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncode.m"; sourceTree = "<group>"; };
+		BC055AE8220AD18800ED30E7 /* CLKSReachabilityKSCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSReachabilityKSCrash.h; sourceTree = "<group>"; };
+		BC055AEA220AD18800ED30E7 /* CLKSCrashReportSinkConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashReportSinkConsole.h; sourceTree = "<group>"; };
+		BC055AEB220AD18800ED30E7 /* CLKSCrashReportSinkStandard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashReportSinkStandard.h; sourceTree = "<group>"; };
+		BC055AEC220AD18800ED30E7 /* CLKSCrashReportSinkEMail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashReportSinkEMail.h; sourceTree = "<group>"; };
+		BC055AED220AD18800ED30E7 /* CLKSCrashReportSinkVictory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashReportSinkVictory.h; sourceTree = "<group>"; };
+		BC055AEE220AD18800ED30E7 /* CLKSCrashReportSinkQuincyHockey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKSCrashReportSinkQuincyHockey.h; sourceTree = "<group>"; };
+		BC055AEF220AD18800ED30E7 /* CLKSCrashReportSinkConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSCrashReportSinkConsole.m; sourceTree = "<group>"; };
+		BC055AF0220AD18800ED30E7 /* CLKSCrashReportSinkVictory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSCrashReportSinkVictory.m; sourceTree = "<group>"; };
+		BC055AF1220AD18800ED30E7 /* CLKSCrashReportSinkStandard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSCrashReportSinkStandard.m; sourceTree = "<group>"; };
+		BC055AF2220AD18800ED30E7 /* CLKSCrashReportSinkEMail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSCrashReportSinkEMail.m; sourceTree = "<group>"; };
+		BC055AF3220AD18800ED30E7 /* CLKSCrashReportSinkQuincyHockey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKSCrashReportSinkQuincyHockey.m; sourceTree = "<group>"; };
+		BC055B90220AD2A900ED30E7 /* None.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = None.h; sourceTree = "<group>"; };
+		BC055B91220AD2A900ED30E7 /* Optional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Optional.h; sourceTree = "<group>"; };
+		BC055B92220AD2A900ED30E7 /* StringRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringRef.h; sourceTree = "<group>"; };
+		BC055B94220AD2AA00ED30E7 /* llvm-config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "llvm-config.h"; sourceTree = "<group>"; };
+		BC055B96220AD2AA00ED30E7 /* Casting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Casting.h; sourceTree = "<group>"; };
+		BC055B97220AD2AA00ED30E7 /* AlignOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlignOf.h; sourceTree = "<group>"; };
+		BC055B98220AD2AA00ED30E7 /* Compiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compiler.h; sourceTree = "<group>"; };
+		BC055B99220AD2AA00ED30E7 /* type_traits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = type_traits.h; sourceTree = "<group>"; };
+		BC055BA6220BDE4D00ED30E7 /* CRLFAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFAppInfo.h; sourceTree = "<group>"; };
+		BC055BA7220BDE4D00ED30E7 /* CRLFAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFAppInfo.m; sourceTree = "<group>"; };
+		BC055BAB220BE02300ED30E7 /* CRLFAppInfoProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFAppInfoProvider.h; sourceTree = "<group>"; };
+		BC055BAC220BE02300ED30E7 /* CRLFAppInfoProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFAppInfoProvider.m; sourceTree = "<group>"; };
+		BC8362F52214E775001C45B3 /* CRLFMachException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFMachException.h; sourceTree = "<group>"; };
+		BC8362F62214E775001C45B3 /* CRLFBinaryImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFBinaryImage.m; sourceTree = "<group>"; };
+		BC8362F72214E776001C45B3 /* CRLFCrashReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFCrashReport.h; sourceTree = "<group>"; };
+		BC8362F82214E776001C45B3 /* CRLFDeviceBatteryState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFDeviceBatteryState.h; sourceTree = "<group>"; };
+		BC8362F92214E776001C45B3 /* CRLFTelephonyNetworkInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFTelephonyNetworkInfo.h; sourceTree = "<group>"; };
+		BC8362FA2214E776001C45B3 /* CRLFTelephonyNetworkInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFTelephonyNetworkInfo.m; sourceTree = "<group>"; };
+		BC8362FB2214E776001C45B3 /* CRLFDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFDeviceInfo.h; sourceTree = "<group>"; };
+		BC8362FC2214E776001C45B3 /* CRLFDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFDeviceInfo.m; sourceTree = "<group>"; };
+		BC8362FD2214E776001C45B3 /* CRLFSignalException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFSignalException.m; sourceTree = "<group>"; };
+		BC8362FE2214E776001C45B3 /* CRLFThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFThread.h; sourceTree = "<group>"; };
+		BC8362FF2214E776001C45B3 /* CRLFStackFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFStackFrame.h; sourceTree = "<group>"; };
+		BC8363002214E776001C45B3 /* CRLFMachException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFMachException.m; sourceTree = "<group>"; };
+		BC8363012214E776001C45B3 /* CRLFFootprint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFFootprint.h; sourceTree = "<group>"; };
+		BC8363022214E776001C45B3 /* CRLFThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFThread.m; sourceTree = "<group>"; };
+		BC8363032214E776001C45B3 /* CRLFFootprint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFFootprint.m; sourceTree = "<group>"; };
+		BC8363042214E777001C45B3 /* CRLFCrashError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFCrashError.m; sourceTree = "<group>"; };
+		BC8363052214E777001C45B3 /* CRLFStackFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFStackFrame.m; sourceTree = "<group>"; };
+		BC8363062214E777001C45B3 /* CRLFCrashReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFCrashReport.m; sourceTree = "<group>"; };
+		BC8363072214E777001C45B3 /* CRLFCrashError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFCrashError.h; sourceTree = "<group>"; };
+		BC8363082214E777001C45B3 /* CRLFBinaryImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFBinaryImage.h; sourceTree = "<group>"; };
+		BC8363092214E777001C45B3 /* CRLFSignalException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFSignalException.h; sourceTree = "<group>"; };
+		BC83631F2214E785001C45B3 /* CRLFReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFReachability.h; sourceTree = "<group>"; };
+		BC8363202214E785001C45B3 /* CRLFDeviceInfoProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFDeviceInfoProvider.h; sourceTree = "<group>"; };
+		BC8363212214E785001C45B3 /* CRLFReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFReachability.m; sourceTree = "<group>"; };
+		BC8363222214E786001C45B3 /* CRLFDeviceInfoProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFDeviceInfoProvider.m; sourceTree = "<group>"; };
+		BC83632E22156A84001C45B3 /* Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Platform.h; sourceTree = "<group>"; };
+		BC83632F22156A84001C45B3 /* ReferenceStorage.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReferenceStorage.def; sourceTree = "<group>"; };
+		BC83633022156A85001C45B3 /* SwiftDemangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftDemangle.h; sourceTree = "<group>"; };
+		BC83633122156A85001C45B3 /* ValueWitnessMangling.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ValueWitnessMangling.def; sourceTree = "<group>"; };
+		BC83633222156A85001C45B3 /* DemangleNodes.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DemangleNodes.def; sourceTree = "<group>"; };
+		BC83633322156A85001C45B3 /* StandardTypesMangling.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StandardTypesMangling.def; sourceTree = "<group>"; };
+		BC83633A22156D3D001C45B3 /* Context.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Context.cpp; sourceTree = "<group>"; };
+		BC83633C22156D70001C45B3 /* ManglingMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManglingMacros.h; sourceTree = "<group>"; };
+		BC83633D22156D91001C45B3 /* Demangler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demangler.h; sourceTree = "<group>"; };
+		BC83633E22156DF1001C45B3 /* OldDemangler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OldDemangler.cpp; sourceTree = "<group>"; };
+		BC83634022156E46001C45B3 /* ManglingUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManglingUtils.h; sourceTree = "<group>"; };
+		BC83634122156EA0001C45B3 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		BC83634222156F38001C45B3 /* Visibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Visibility.h; sourceTree = "<group>"; };
+		BC83634322157292001C45B3 /* ManglingUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ManglingUtils.cpp; sourceTree = "<group>"; };
+		BC836345221573EB001C45B3 /* Demangler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Demangler.cpp; sourceTree = "<group>"; };
+		BC8363472215748F001C45B3 /* NodePrinter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NodePrinter.cpp; sourceTree = "<group>"; };
+		BC83634922157591001C45B3 /* STLExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STLExtras.h; sourceTree = "<group>"; };
+		BCA18D4522408596007F6FF1 /* NSBundle+CRLFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+CRLFAdditions.h"; sourceTree = "<group>"; };
+		BCA18D4622408596007F6FF1 /* NSBundle+CRLFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+CRLFAdditions.m"; sourceTree = "<group>"; };
+		BCC7BCCA220AC3E300CD4698 /* CRLFAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFAttribute.h; sourceTree = "<group>"; };
+		BCC7BCCB220AC3E300CD4698 /* CRLFAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFAttribute.m; sourceTree = "<group>"; };
+		BCC7BCCE220AC41300CD4698 /* NSMutableDictionary+CRLFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+CRLFAdditions.m"; sourceTree = "<group>"; };
+		BCC7BCCF220AC41300CD4698 /* NSMutableDictionary+CRLFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+CRLFAdditions.h"; sourceTree = "<group>"; };
+		BCC7BCD2220AC4C200CD4698 /* CRLFCompatibilityUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLFCompatibilityUtils.m; sourceTree = "<group>"; };
+		BCC7BCD3220AC4C200CD4698 /* CRLFCompatibilityUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFCompatibilityUtils.h; sourceTree = "<group>"; };
+		BCC7BCD6220AC50200CD4698 /* CRLFMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLFMacros.h; sourceTree = "<group>"; };
+		BCC7BCDA220ACB6F00CD4698 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Crashlife/Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7EAF7141FC8DAB000196024 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7EAF70E1FC8DAB000196024 = {
+			isa = PBXGroup;
+			children = (
+				BCC7BCDA220ACB6F00CD4698 /* Info.plist */,
+				B7EAF8B31FC8DBA900196024 /* Source */,
+				B7EAF7191FC8DAB000196024 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7EAF7191FC8DAB000196024 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7EAF7181FC8DAB000196024 /* Crashlife.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7EAF8B31FC8DBA900196024 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BC055A51220AD08B00ED30E7 /* KSCrash */,
+				BCC7BCD8220AC5D300CD4698 /* Additions */,
+				B7EAF8DC1FC8DBA900196024 /* Crashlife.h */,
+				B7EAF8DD1FC8DBA900196024 /* Crashlife.m */,
+				BC055BAA220BE01200ED30E7 /* Services */,
+				BCC7BCD9220AC60100CD4698 /* Models */,
+				60DE34769557BECB6F05403E /* CRLFClient.h */,
+				60DE39F1BDF596332D38490A /* CRLFClient.m */,
+				60DE3A4B40CCACCCE378532E /* CRLFNetworkManager.h */,
+				60DE373B0BB8B3D7A94F2FE4 /* CRLFNetworkManager.m */,
+				60DE37A9DA16F383D12C51BF /* CRLFEvent.m */,
+				60DE354CC7F58622D9B4B1BE /* CRLFEvent.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		BC055A51220AD08B00ED30E7 /* KSCrash */ = {
+			isa = PBXGroup;
+			children = (
+				BC055A52220AD15C00ED30E7 /* Source */,
+			);
+			path = KSCrash;
+			sourceTree = "<group>";
+		};
+		BC055A52220AD15C00ED30E7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BC055A53220AD16600ED30E7 /* KSCrash */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		BC055A53220AD16600ED30E7 /* KSCrash */ = {
+			isa = PBXGroup;
+			children = (
+				BC055B8E220AD2A900ED30E7 /* llvm */,
+				BC055A60220AD18700ED30E7 /* Recording */,
+				BC055AC5220AD18800ED30E7 /* Reporting */,
+				BC055A54220AD18700ED30E7 /* swift */,
+			);
+			path = KSCrash;
+			sourceTree = "<group>";
+		};
+		BC055A54220AD18700ED30E7 /* swift */ = {
+			isa = PBXGroup;
+			children = (
+				BC055A55220AD18700ED30E7 /* SwiftStrings.h */,
+				BC055A56220AD18700ED30E7 /* Basic */,
+			);
+			path = swift;
+			sourceTree = "<group>";
+		};
+		BC055A56220AD18700ED30E7 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				BC83633222156A85001C45B3 /* DemangleNodes.def */,
+				BC83632E22156A84001C45B3 /* Platform.h */,
+				BC83632F22156A84001C45B3 /* ReferenceStorage.def */,
+				BC83633322156A85001C45B3 /* StandardTypesMangling.def */,
+				BC83633022156A85001C45B3 /* SwiftDemangle.h */,
+				BC83633122156A85001C45B3 /* ValueWitnessMangling.def */,
+				BC055A57220AD18700ED30E7 /* Demangle.cpp */,
+				BC055A58220AD18700ED30E7 /* Malloc.h */,
+				BC055A59220AD18700ED30E7 /* DemangleNodes.h */,
+				BC055A5A220AD18700ED30E7 /* Punycode.cpp */,
+				BC055A5B220AD18700ED30E7 /* Demangle.h */,
+				BC055A5C220AD18700ED30E7 /* Punycode.h */,
+				BC055A5D220AD18700ED30E7 /* Fallthrough.h */,
+				BC055A5E220AD18700ED30E7 /* LLVM.h */,
+				BC83633A22156D3D001C45B3 /* Context.cpp */,
+				BC83633C22156D70001C45B3 /* ManglingMacros.h */,
+				BC83633D22156D91001C45B3 /* Demangler.h */,
+				BC83633E22156DF1001C45B3 /* OldDemangler.cpp */,
+				BC83634022156E46001C45B3 /* ManglingUtils.h */,
+				BC83634122156EA0001C45B3 /* Config.h */,
+				BC83634222156F38001C45B3 /* Visibility.h */,
+				BC83634322157292001C45B3 /* ManglingUtils.cpp */,
+				BC836345221573EB001C45B3 /* Demangler.cpp */,
+				BC8363472215748F001C45B3 /* NodePrinter.cpp */,
+				BC83634922157591001C45B3 /* STLExtras.h */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		BC055A60220AD18700ED30E7 /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+				BC055ABE220AD18700ED30E7 /* CLKSCrash.h */,
+				BC055A61220AD18700ED30E7 /* CLKSCrash.m */,
+				BC055AC0220AD18700ED30E7 /* CLKSCrashCachedData.h */,
+				BC055AB8220AD18700ED30E7 /* CLKSCrashCachedData.c */,
+				BC055AC3220AD18700ED30E7 /* CLKSCrashDoctor.h */,
+				BC055ABC220AD18700ED30E7 /* CLKSCrashDoctor.m */,
+				BC055A7B220AD18700ED30E7 /* CLKSCrashReport.h */,
+				BC055ABD220AD18700ED30E7 /* CLKSCrashReport.c */,
+				BC055ABF220AD18700ED30E7 /* CLKSCrashReportStore.h */,
+				BC055A62220AD18700ED30E7 /* CLKSCrashReportStore.c */,
+				BC055ABA220AD18700ED30E7 /* CLKSCrashReportVersion.h */,
+				BC055ABB220AD18700ED30E7 /* CLKSCrashReportFixer.h */,
+				BC055AC4220AD18700ED30E7 /* CLKSCrashReportFixer.c */,
+				BC055AC2220AD18700ED30E7 /* CLKSCrashReportFields.h */,
+				BC055AB7220AD18700ED30E7 /* CLKSCrashC.h */,
+				BC055AC1220AD18700ED30E7 /* CLKSCrashC.c */,
+				BC055A7C220AD18700ED30E7 /* CLKSCrashReportWriter.h */,
+				BC055AB9220AD18700ED30E7 /* CLKSSystemCapabilities.h */,
+				BC055A63220AD18700ED30E7 /* Monitors */,
+				BC055A7D220AD18700ED30E7 /* Tools */,
+			);
+			path = Recording;
+			sourceTree = "<group>";
+		};
+		BC055A63220AD18700ED30E7 /* Monitors */ = {
+			isa = PBXGroup;
+			children = (
+				BC055A6D220AD18700ED30E7 /* CLKSCrashMonitor.h */,
+				BC055A77220AD18700ED30E7 /* CLKSCrashMonitor.c */,
+				BC055A65220AD18700ED30E7 /* CLKSCrashMonitorContext.h */,
+				BC055A66220AD18700ED30E7 /* CLKSCrashMonitorType.h */,
+				BC055A70220AD18700ED30E7 /* CLKSCrashMonitorType.c */,
+				BC055A73220AD18700ED30E7 /* CLKSCrashMonitor_AppState.h */,
+				BC055A69220AD18700ED30E7 /* CLKSCrashMonitor_AppState.c */,
+				BC055A6A220AD18700ED30E7 /* CLKSCrashMonitor_CPPException.h */,
+				BC055A79220AD18700ED30E7 /* CLKSCrashMonitor_CPPException.cpp */,
+				BC055A71220AD18700ED30E7 /* CLKSCrashMonitor_Deadlock.h */,
+				BC055A64220AD18700ED30E7 /* CLKSCrashMonitor_Deadlock.m */,
+				BC055A75220AD18700ED30E7 /* CLKSCrashMonitor_MachException.h */,
+				BC055A6E220AD18700ED30E7 /* CLKSCrashMonitor_MachException.c */,
+				BC055A78220AD18700ED30E7 /* CLKSCrashMonitor_NSException.h */,
+				BC055A6C220AD18700ED30E7 /* CLKSCrashMonitor_NSException.m */,
+				BC055A68220AD18700ED30E7 /* CLKSCrashMonitor_Signal.h */,
+				BC055A72220AD18700ED30E7 /* CLKSCrashMonitor_Signal.c */,
+				BC055A74220AD18700ED30E7 /* CLKSCrashMonitor_System.h */,
+				BC055A67220AD18700ED30E7 /* CLKSCrashMonitor_System.m */,
+				BC055A6F220AD18700ED30E7 /* CLKSCrashMonitor_User.h */,
+				BC055A76220AD18700ED30E7 /* CLKSCrashMonitor_User.c */,
+				BC055A7A220AD18700ED30E7 /* CLKSCrashMonitor_Zombie.h */,
+				BC055A6B220AD18700ED30E7 /* CLKSCrashMonitor_Zombie.c */,
+			);
+			path = Monitors;
+			sourceTree = "<group>";
+		};
+		BC055A7D220AD18700ED30E7 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				BC055A83220AD18700ED30E7 /* CLKSCPU_Apple.h */,
+				BC055A8A220AD18700ED30E7 /* CLKSCPU_arm.c */,
+				BC055AB4220AD18700ED30E7 /* CLKSCPU_arm64.c */,
+				BC055A85220AD18700ED30E7 /* CLKSCPU_x86_32.c */,
+				BC055A9F220AD18700ED30E7 /* CLKSCPU_x86_64.c */,
+				BC055AA6220AD18700ED30E7 /* CLKSCPU.c */,
+				BC055A8C220AD18700ED30E7 /* CLKSCPU.h */,
+				BC055A9C220AD18700ED30E7 /* CLKSDate.c */,
+				BC055AAB220AD18700ED30E7 /* CLKSDate.h */,
+				BC055AA4220AD18700ED30E7 /* CLKSDebug.c */,
+				BC055A82220AD18700ED30E7 /* CLKSDebug.h */,
+				BC055A9D220AD18700ED30E7 /* CLKSDemangle_CPP.cpp */,
+				BC055A91220AD18700ED30E7 /* CLKSDemangle_CPP.h */,
+				BC055A80220AD18700ED30E7 /* CLKSDemangle_Swift.cpp */,
+				BC055A8D220AD18700ED30E7 /* CLKSDemangle_Swift.h */,
+				BC055A94220AD18700ED30E7 /* CLKSDynamicLinker.c */,
+				BC055AB3220AD18700ED30E7 /* CLKSDynamicLinker.h */,
+				BC055A88220AD18700ED30E7 /* CLKSFileUtils.c */,
+				BC055AA9220AD18700ED30E7 /* CLKSFileUtils.h */,
+				BC055AB6220AD18700ED30E7 /* CLKSID.c */,
+				BC055A90220AD18700ED30E7 /* CLKSID.h */,
+				BC055AAC220AD18700ED30E7 /* CLKSJSONCodec.c */,
+				BC055A9B220AD18700ED30E7 /* CLKSJSONCodec.h */,
+				BC055AAE220AD18700ED30E7 /* CLKSJSONCodecObjC.h */,
+				BC055A97220AD18700ED30E7 /* CLKSJSONCodecObjC.m */,
+				BC055AA1220AD18700ED30E7 /* CLKSLogger.c */,
+				BC055A84220AD18700ED30E7 /* CLKSLogger.h */,
+				BC055AB2220AD18700ED30E7 /* CLKSMach.c */,
+				BC055A93220AD18700ED30E7 /* CLKSMach.h */,
+				BC055A92220AD18700ED30E7 /* CLKSMachineContext_Apple.h */,
+				BC055A8F220AD18700ED30E7 /* CLKSMachineContext.c */,
+				BC055AB5220AD18700ED30E7 /* CLKSMachineContext.h */,
+				BC055AA5220AD18700ED30E7 /* CLKSMemory.c */,
+				BC055A8E220AD18700ED30E7 /* CLKSMemory.h */,
+				BC055A89220AD18700ED30E7 /* CLKSObjC.c */,
+				BC055AA8220AD18700ED30E7 /* CLKSObjC.h */,
+				BC055A96220AD18700ED30E7 /* CLKSObjCApple.h */,
+				BC055AA2220AD18700ED30E7 /* CLKSSignalInfo.c */,
+				BC055A86220AD18700ED30E7 /* CLKSSignalInfo.h */,
+				BC055AB1220AD18700ED30E7 /* CLKSStackCursor_Backtrace.c */,
+				BC055A98220AD18700ED30E7 /* CLKSStackCursor_Backtrace.h */,
+				BC055A9A220AD18700ED30E7 /* CLKSStackCursor_MachineContext.c */,
+				BC055AAD220AD18700ED30E7 /* CLKSStackCursor_MachineContext.h */,
+				BC055AA7220AD18700ED30E7 /* CLKSStackCursor_SelfThread.c */,
+				BC055A8B220AD18700ED30E7 /* CLKSStackCursor_SelfThread.h */,
+				BC055A99220AD18700ED30E7 /* CLKSStackCursor.c */,
+				BC055AB0220AD18700ED30E7 /* CLKSStackCursor.h */,
+				BC055A9E220AD18700ED30E7 /* CLKSString.c */,
+				BC055A7F220AD18700ED30E7 /* CLKSString.h */,
+				BC055AA0220AD18700ED30E7 /* CLKSSymbolicator.c */,
+				BC055A7E220AD18700ED30E7 /* CLKSSymbolicator.h */,
+				BC055AAA220AD18700ED30E7 /* CLKSSysCtl.c */,
+				BC055A87220AD18700ED30E7 /* CLKSSysCtl.h */,
+				BC055AAF220AD18700ED30E7 /* CLKSThread.c */,
+				BC055A95220AD18700ED30E7 /* CLKSThread.h */,
+				BC055AA3220AD18700ED30E7 /* NSError+CRLFSimpleConstructor.h */,
+				BC055A81220AD18700ED30E7 /* NSError+CRLFSimpleConstructor.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		BC055AC5220AD18800ED30E7 /* Reporting */ = {
+			isa = PBXGroup;
+			children = (
+				BC055AC6220AD18800ED30E7 /* Filters */,
+				BC055ADC220AD18800ED30E7 /* Tools */,
+				BC055AE9220AD18800ED30E7 /* Sinks */,
+			);
+			path = Reporting;
+			sourceTree = "<group>";
+		};
+		BC055AC6220AD18800ED30E7 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				BC055AD3220AD18800ED30E7 /* CLKSCrashReportFilter.h */,
+				BC055AD2220AD18800ED30E7 /* CLKSCrashReportFilterAlert.h */,
+				BC055AD6220AD18800ED30E7 /* CLKSCrashReportFilterAlert.m */,
+				BC055AC7220AD18800ED30E7 /* CLKSCrashReportFilterAppleFmt.h */,
+				BC055AD5220AD18800ED30E7 /* CLKSCrashReportFilterAppleFmt.m */,
+				BC055AD4220AD18800ED30E7 /* CLKSCrashReportFilterBasic.h */,
+				BC055ADB220AD18800ED30E7 /* CLKSCrashReportFilterBasic.m */,
+				BC055AD0220AD18800ED30E7 /* CLKSCrashReportFilterGZip.h */,
+				BC055AD8220AD18800ED30E7 /* CLKSCrashReportFilterGZip.m */,
+				BC055AD7220AD18800ED30E7 /* CLKSCrashReportFilterJSON.h */,
+				BC055AD1220AD18800ED30E7 /* CLKSCrashReportFilterJSON.m */,
+				BC055AD9220AD18800ED30E7 /* CLKSCrashReportFilterSets.h */,
+				BC055ACF220AD18800ED30E7 /* CLKSCrashReportFilterSets.m */,
+				BC055ACE220AD18800ED30E7 /* CLKSCrashReportFilterStringify.h */,
+				BC055ADA220AD18800ED30E7 /* CLKSCrashReportFilterStringify.m */,
+				BC055AC8220AD18800ED30E7 /* Tools */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		BC055AC8220AD18800ED30E7 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				BC055ACD220AD18800ED30E7 /* CLKSVarArgs.h */,
+				BC055ACB220AD18800ED30E7 /* Container+CRLFDeepSearch.h */,
+				BC055AC9220AD18800ED30E7 /* Container+CRLFDeepSearch.m */,
+				BC055ACA220AD18800ED30E7 /* NSData+CRLFGZip.h */,
+				BC055ACC220AD18800ED30E7 /* NSData+CRLFGZip.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		BC055ADC220AD18800ED30E7 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				BC055AE1220AD18800ED30E7 /* CLKSCString.h */,
+				BC055AE6220AD18800ED30E7 /* CLKSCString.m */,
+				BC055ADF220AD18800ED30E7 /* CLKSHTTPMultipartPostBody.h */,
+				BC055AE3220AD18800ED30E7 /* CLKSHTTPMultipartPostBody.m */,
+				BC055ADD220AD18800ED30E7 /* CLKSHTTPRequestSender.h */,
+				BC055AE5220AD18800ED30E7 /* CLKSHTTPRequestSender.m */,
+				BC055AE8220AD18800ED30E7 /* CLKSReachabilityKSCrash.h */,
+				BC055AE2220AD18800ED30E7 /* CLKSReachabilityKSCrash.m */,
+				BC055ADE220AD18800ED30E7 /* NSMutableData+AppendUTF8.h */,
+				BC055AE4220AD18800ED30E7 /* NSMutableData+AppendUTF8.m */,
+				BC055AE0220AD18800ED30E7 /* NSString+URLEncode.h */,
+				BC055AE7220AD18800ED30E7 /* NSString+URLEncode.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		BC055AE9220AD18800ED30E7 /* Sinks */ = {
+			isa = PBXGroup;
+			children = (
+				BC055AEA220AD18800ED30E7 /* CLKSCrashReportSinkConsole.h */,
+				BC055AEF220AD18800ED30E7 /* CLKSCrashReportSinkConsole.m */,
+				BC055AEC220AD18800ED30E7 /* CLKSCrashReportSinkEMail.h */,
+				BC055AF2220AD18800ED30E7 /* CLKSCrashReportSinkEMail.m */,
+				BC055AEE220AD18800ED30E7 /* CLKSCrashReportSinkQuincyHockey.h */,
+				BC055AF3220AD18800ED30E7 /* CLKSCrashReportSinkQuincyHockey.m */,
+				BC055AEB220AD18800ED30E7 /* CLKSCrashReportSinkStandard.h */,
+				BC055AF1220AD18800ED30E7 /* CLKSCrashReportSinkStandard.m */,
+				BC055AED220AD18800ED30E7 /* CLKSCrashReportSinkVictory.h */,
+				BC055AF0220AD18800ED30E7 /* CLKSCrashReportSinkVictory.m */,
+			);
+			path = Sinks;
+			sourceTree = "<group>";
+		};
+		BC055B8E220AD2A900ED30E7 /* llvm */ = {
+			isa = PBXGroup;
+			children = (
+				BC055B8F220AD2A900ED30E7 /* ADT */,
+				BC055B93220AD2A900ED30E7 /* Config */,
+				BC055B95220AD2AA00ED30E7 /* Support */,
+			);
+			path = llvm;
+			sourceTree = "<group>";
+		};
+		BC055B8F220AD2A900ED30E7 /* ADT */ = {
+			isa = PBXGroup;
+			children = (
+				BC055B90220AD2A900ED30E7 /* None.h */,
+				BC055B91220AD2A900ED30E7 /* Optional.h */,
+				BC055B92220AD2A900ED30E7 /* StringRef.h */,
+			);
+			path = ADT;
+			sourceTree = "<group>";
+		};
+		BC055B93220AD2A900ED30E7 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BC055B94220AD2AA00ED30E7 /* llvm-config.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		BC055B95220AD2AA00ED30E7 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				BC055B96220AD2AA00ED30E7 /* Casting.h */,
+				BC055B97220AD2AA00ED30E7 /* AlignOf.h */,
+				BC055B98220AD2AA00ED30E7 /* Compiler.h */,
+				BC055B99220AD2AA00ED30E7 /* type_traits.h */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		BC055BAA220BE01200ED30E7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BC8363202214E785001C45B3 /* CRLFDeviceInfoProvider.h */,
+				BC8363222214E786001C45B3 /* CRLFDeviceInfoProvider.m */,
+				BC83631F2214E785001C45B3 /* CRLFReachability.h */,
+				BC8363212214E785001C45B3 /* CRLFReachability.m */,
+				BC055BAB220BE02300ED30E7 /* CRLFAppInfoProvider.h */,
+				BC055BAC220BE02300ED30E7 /* CRLFAppInfoProvider.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BCC7BCD8220AC5D300CD4698 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				BCA18D4522408596007F6FF1 /* NSBundle+CRLFAdditions.h */,
+				BCA18D4622408596007F6FF1 /* NSBundle+CRLFAdditions.m */,
+				BCC7BCCF220AC41300CD4698 /* NSMutableDictionary+CRLFAdditions.h */,
+				BCC7BCCE220AC41300CD4698 /* NSMutableDictionary+CRLFAdditions.m */,
+				BCC7BCD6220AC50200CD4698 /* CRLFMacros.h */,
+				BCC7BCD3220AC4C200CD4698 /* CRLFCompatibilityUtils.h */,
+				BCC7BCD2220AC4C200CD4698 /* CRLFCompatibilityUtils.m */,
+				60DE39D4E0F80DB53F69073B /* NSError+CRLFAdditions.m */,
+				60DE37E59DFC3C2B7EA4BC59 /* NSError+CRLFAdditions.h */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		BCC7BCD9220AC60100CD4698 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC8363082214E777001C45B3 /* CRLFBinaryImage.h */,
+				BC8362F62214E775001C45B3 /* CRLFBinaryImage.m */,
+				BC8363072214E777001C45B3 /* CRLFCrashError.h */,
+				BC8363042214E777001C45B3 /* CRLFCrashError.m */,
+				BC8362F72214E776001C45B3 /* CRLFCrashReport.h */,
+				BC8363062214E777001C45B3 /* CRLFCrashReport.m */,
+				BC8362F82214E776001C45B3 /* CRLFDeviceBatteryState.h */,
+				BC8362FB2214E776001C45B3 /* CRLFDeviceInfo.h */,
+				BC8362FC2214E776001C45B3 /* CRLFDeviceInfo.m */,
+				BC8363012214E776001C45B3 /* CRLFFootprint.h */,
+				BC8363032214E776001C45B3 /* CRLFFootprint.m */,
+				BC8362F52214E775001C45B3 /* CRLFMachException.h */,
+				BC8363002214E776001C45B3 /* CRLFMachException.m */,
+				BC8363092214E777001C45B3 /* CRLFSignalException.h */,
+				BC8362FD2214E776001C45B3 /* CRLFSignalException.m */,
+				BC8362FF2214E776001C45B3 /* CRLFStackFrame.h */,
+				BC8363052214E777001C45B3 /* CRLFStackFrame.m */,
+				BC8362F92214E776001C45B3 /* CRLFTelephonyNetworkInfo.h */,
+				BC8362FA2214E776001C45B3 /* CRLFTelephonyNetworkInfo.m */,
+				BC8362FE2214E776001C45B3 /* CRLFThread.h */,
+				BC8363022214E776001C45B3 /* CRLFThread.m */,
+				BC055BA6220BDE4D00ED30E7 /* CRLFAppInfo.h */,
+				BC055BA7220BDE4D00ED30E7 /* CRLFAppInfo.m */,
+				BCC7BCCA220AC3E300CD4698 /* CRLFAttribute.h */,
+				BCC7BCCB220AC3E300CD4698 /* CRLFAttribute.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B7EAF7151FC8DAB000196024 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC055B0B220AD18800ED30E7 /* CLKSCrashMonitor_User.h in Headers */,
+				BC055B1F220AD18800ED30E7 /* CLKSLogger.h in Headers */,
+				BC055B5A220AD18800ED30E7 /* CLKSCrashReportStore.h in Headers */,
+				BC055B52220AD18800ED30E7 /* CLKSCrashC.h in Headers */,
+				BC055B22220AD18800ED30E7 /* CLKSSysCtl.h in Headers */,
+				BC83633422156A85001C45B3 /* Platform.h in Headers */,
+				BC055B16220AD18800ED30E7 /* CLKSCrashMonitor_Zombie.h in Headers */,
+				BC055B84220AD18800ED30E7 /* CLKSCrashReportSinkQuincyHockey.h in Headers */,
+				BC055B10220AD18800ED30E7 /* CLKSCrashMonitor_System.h in Headers */,
+				BC055BA8220BDE4D00ED30E7 /* CRLFAppInfo.h in Headers */,
+				BC83630A2214E777001C45B3 /* CRLFMachException.h in Headers */,
+				BC055B04220AD18800ED30E7 /* CLKSCrashMonitor_Signal.h in Headers */,
+				BC055B83220AD18800ED30E7 /* CLKSCrashReportSinkVictory.h in Headers */,
+				BC8363102214E777001C45B3 /* CRLFDeviceInfo.h in Headers */,
+				BC83630D2214E777001C45B3 /* CRLFDeviceBatteryState.h in Headers */,
+				BC055B66220AD18800ED30E7 /* CLKSCrashReportFilterStringify.h in Headers */,
+				BC055B27220AD18800ED30E7 /* CLKSCPU.h in Headers */,
+				BCC7BCD7220AC50200CD4698 /* CRLFMacros.h in Headers */,
+				BC8363162214E777001C45B3 /* CRLFFootprint.h in Headers */,
+				BC055B63220AD18800ED30E7 /* Container+CRLFDeepSearch.h in Headers */,
+				BC055B6B220AD18800ED30E7 /* CLKSCrashReportFilter.h in Headers */,
+				BC055B33220AD18800ED30E7 /* CLKSStackCursor_Backtrace.h in Headers */,
+				BC055B76220AD18800ED30E7 /* CLKSHTTPMultipartPostBody.h in Headers */,
+				BC055B9E220AD2AA00ED30E7 /* llvm-config.h in Headers */,
+				BC055AFA220AD18800ED30E7 /* Punycode.h in Headers */,
+				BC055B5E220AD18800ED30E7 /* CLKSCrashDoctor.h in Headers */,
+				BC055B80220AD18800ED30E7 /* CLKSCrashReportSinkConsole.h in Headers */,
+				BC055B55220AD18800ED30E7 /* CLKSCrashReportVersion.h in Headers */,
+				BC8363232214E786001C45B3 /* CRLFReachability.h in Headers */,
+				BC055B17220AD18800ED30E7 /* CLKSCrashReport.h in Headers */,
+				BC8363132214E777001C45B3 /* CRLFThread.h in Headers */,
+				BC055B5B220AD18800ED30E7 /* CLKSCrashCachedData.h in Headers */,
+				BC055B30220AD18800ED30E7 /* CLKSThread.h in Headers */,
+				BC055B4E220AD18800ED30E7 /* CLKSDynamicLinker.h in Headers */,
+				BC83630E2214E777001C45B3 /* CRLFTelephonyNetworkInfo.h in Headers */,
+				BC055B74220AD18800ED30E7 /* CLKSHTTPRequestSender.h in Headers */,
+				BC055B78220AD18800ED30E7 /* CLKSCString.h in Headers */,
+				B7EAF9A61FC8DBA900196024 /* Crashlife.h in Headers */,
+				BC055B50220AD18800ED30E7 /* CLKSMachineContext.h in Headers */,
+				BC055B48220AD18800ED30E7 /* CLKSStackCursor_MachineContext.h in Headers */,
+				BC8363142214E777001C45B3 /* CRLFStackFrame.h in Headers */,
+				BCA18D4722408596007F6FF1 /* NSBundle+CRLFAdditions.h in Headers */,
+				BC055B6A220AD18800ED30E7 /* CLKSCrashReportFilterAlert.h in Headers */,
+				BC055B6F220AD18800ED30E7 /* CLKSCrashReportFilterJSON.h in Headers */,
+				BC055B49220AD18800ED30E7 /* CLKSJSONCodecObjC.h in Headers */,
+				BC055B14220AD18800ED30E7 /* CLKSCrashMonitor_NSException.h in Headers */,
+				BC055B1D220AD18800ED30E7 /* CLKSDebug.h in Headers */,
+				BC055B65220AD18800ED30E7 /* CLKSVarArgs.h in Headers */,
+				BC055B82220AD18800ED30E7 /* CLKSCrashReportSinkEMail.h in Headers */,
+				BC055B02220AD18800ED30E7 /* CLKSCrashMonitorType.h in Headers */,
+				BC055BA1220AD2AA00ED30E7 /* Compiler.h in Headers */,
+				BC055B21220AD18800ED30E7 /* CLKSSignalInfo.h in Headers */,
+				BC055B81220AD18800ED30E7 /* CLKSCrashReportSinkStandard.h in Headers */,
+				BC055B46220AD18800ED30E7 /* CLKSDate.h in Headers */,
+				BC83631D2214E777001C45B3 /* CRLFBinaryImage.h in Headers */,
+				BC055B71220AD18800ED30E7 /* CLKSCrashReportFilterSets.h in Headers */,
+				BCC7BCD5220AC4C200CD4698 /* CRLFCompatibilityUtils.h in Headers */,
+				BC055BAD220BE02300ED30E7 /* CRLFAppInfoProvider.h in Headers */,
+				BC055B44220AD18800ED30E7 /* CLKSFileUtils.h in Headers */,
+				BC055AF7220AD18800ED30E7 /* DemangleNodes.h in Headers */,
+				BC055B2B220AD18800ED30E7 /* CLKSID.h in Headers */,
+				BC055B0D220AD18800ED30E7 /* CLKSCrashMonitor_Deadlock.h in Headers */,
+				BC83631C2214E777001C45B3 /* CRLFCrashError.h in Headers */,
+				BC055B5D220AD18800ED30E7 /* CLKSCrashReportFields.h in Headers */,
+				BC055AF4220AD18800ED30E7 /* SwiftStrings.h in Headers */,
+				BC055BA2220AD2AA00ED30E7 /* type_traits.h in Headers */,
+				BC83633622156A85001C45B3 /* SwiftDemangle.h in Headers */,
+				BC055B9F220AD2AA00ED30E7 /* Casting.h in Headers */,
+				BCC7BCD1220AC41300CD4698 /* NSMutableDictionary+CRLFAdditions.h in Headers */,
+				BC055B4B220AD18800ED30E7 /* CLKSStackCursor.h in Headers */,
+				BC055B36220AD18800ED30E7 /* CLKSJSONCodec.h in Headers */,
+				BC055B09220AD18800ED30E7 /* CLKSCrashMonitor.h in Headers */,
+				BC055B9D220AD2AA00ED30E7 /* StringRef.h in Headers */,
+				BC055B3E220AD18800ED30E7 /* NSError+CRLFSimpleConstructor.h in Headers */,
+				BC055B29220AD18800ED30E7 /* CLKSMemory.h in Headers */,
+				BC055AF9220AD18800ED30E7 /* Demangle.h in Headers */,
+				BC055B1A220AD18800ED30E7 /* CLKSString.h in Headers */,
+				BC055AF6220AD18800ED30E7 /* Malloc.h in Headers */,
+				BC83630C2214E777001C45B3 /* CRLFCrashReport.h in Headers */,
+				BC055B26220AD18800ED30E7 /* CLKSStackCursor_SelfThread.h in Headers */,
+				BC055B06220AD18800ED30E7 /* CLKSCrashMonitor_CPPException.h in Headers */,
+				BC055B19220AD18800ED30E7 /* CLKSSymbolicator.h in Headers */,
+				BC055B18220AD18800ED30E7 /* CLKSCrashReportWriter.h in Headers */,
+				BC055BA0220AD2AA00ED30E7 /* AlignOf.h in Headers */,
+				BC055B11220AD18800ED30E7 /* CLKSCrashMonitor_MachException.h in Headers */,
+				BC055B2D220AD18800ED30E7 /* CLKSMachineContext_Apple.h in Headers */,
+				BC83631E2214E777001C45B3 /* CRLFSignalException.h in Headers */,
+				BC055B1E220AD18800ED30E7 /* CLKSCPU_Apple.h in Headers */,
+				BC055B0F220AD18800ED30E7 /* CLKSCrashMonitor_AppState.h in Headers */,
+				BC055B59220AD18800ED30E7 /* CLKSCrash.h in Headers */,
+				BC055B2C220AD18800ED30E7 /* CLKSDemangle_CPP.h in Headers */,
+				BC055B28220AD18800ED30E7 /* CLKSDemangle_Swift.h in Headers */,
+				BC055B6C220AD18800ED30E7 /* CLKSCrashReportFilterBasic.h in Headers */,
+				BC055B68220AD18800ED30E7 /* CLKSCrashReportFilterGZip.h in Headers */,
+				BC055B56220AD18800ED30E7 /* CLKSCrashReportFixer.h in Headers */,
+				BC055B2E220AD18800ED30E7 /* CLKSMach.h in Headers */,
+				BC055B54220AD18800ED30E7 /* CLKSSystemCapabilities.h in Headers */,
+				BC055B9C220AD2AA00ED30E7 /* Optional.h in Headers */,
+				BC055B31220AD18800ED30E7 /* CLKSObjCApple.h in Headers */,
+				BC055B01220AD18800ED30E7 /* CLKSCrashMonitorContext.h in Headers */,
+				BC055B43220AD18800ED30E7 /* CLKSObjC.h in Headers */,
+				BCC7BCCC220AC3E300CD4698 /* CRLFAttribute.h in Headers */,
+				BC055B77220AD18800ED30E7 /* NSString+URLEncode.h in Headers */,
+				BC055B60220AD18800ED30E7 /* CLKSCrashReportFilterAppleFmt.h in Headers */,
+				BC055B7F220AD18800ED30E7 /* CLKSReachabilityKSCrash.h in Headers */,
+				BC055AFB220AD18800ED30E7 /* Fallthrough.h in Headers */,
+				BC055B9B220AD2AA00ED30E7 /* None.h in Headers */,
+				BC055AFC220AD18800ED30E7 /* LLVM.h in Headers */,
+				BC055B62220AD18800ED30E7 /* NSData+CRLFGZip.h in Headers */,
+				BC055B75220AD18800ED30E7 /* NSMutableData+AppendUTF8.h in Headers */,
+				60DE360CFBC3CF287C70D1DF /* CRLFClient.h in Headers */,
+				BC8363242214E786001C45B3 /* CRLFDeviceInfoProvider.h in Headers */,
+				60DE3067395D829485EC2A21 /* CRLFNetworkManager.h in Headers */,
+				60DE36F06E5453A56A0098CE /* NSError+CRLFAdditions.h in Headers */,
+				60DE3015D5F3E0CBB684AC82 /* CRLFEvent.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B7EAF7171FC8DAB000196024 /* Crashlife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7EAF7201FC8DAB000196024 /* Build configuration list for PBXNativeTarget "Crashlife" */;
+			buildPhases = (
+				B7EAF7131FC8DAB000196024 /* Sources */,
+				B7EAF7141FC8DAB000196024 /* Frameworks */,
+				B7EAF7151FC8DAB000196024 /* Headers */,
+				B7EAF7161FC8DAB000196024 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Crashlife;
+			productName = Buglife;
+			productReference = B7EAF7181FC8DAB000196024 /* Crashlife.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7EAF70F1FC8DAB000196024 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Buglife, Inc.";
+				TargetAttributes = {
+					B7EAF7171FC8DAB000196024 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B7EAF7121FC8DAB000196024 /* Build configuration list for PBXProject "Crashlife" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B7EAF70E1FC8DAB000196024;
+			productRefGroup = B7EAF7191FC8DAB000196024 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7EAF7171FC8DAB000196024 /* Crashlife */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7EAF7161FC8DAB000196024 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC83633722156A85001C45B3 /* ValueWitnessMangling.def in Resources */,
+				BC83633922156A85001C45B3 /* StandardTypesMangling.def in Resources */,
+				BC83633522156A85001C45B3 /* ReferenceStorage.def in Resources */,
+				BC83633822156A85001C45B3 /* DemangleNodes.def in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7EAF7131FC8DAB000196024 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC055B39220AD18800ED30E7 /* CLKSString.c in Sources */,
+				BC055B4A220AD18800ED30E7 /* CLKSThread.c in Sources */,
+				BC055B38220AD18800ED30E7 /* CLKSDemangle_CPP.cpp in Sources */,
+				BC055B37220AD18800ED30E7 /* CLKSDate.c in Sources */,
+				BC055B89220AD18800ED30E7 /* CLKSCrashReportSinkQuincyHockey.m in Sources */,
+				BC055B6D220AD18800ED30E7 /* CLKSCrashReportFilterAppleFmt.m in Sources */,
+				BC055B12220AD18800ED30E7 /* CLKSCrashMonitor_User.c in Sources */,
+				BC055BA9220BDE4D00ED30E7 /* CRLFAppInfo.m in Sources */,
+				BC83631A2214E777001C45B3 /* CRLFStackFrame.m in Sources */,
+				BCC7BCCD220AC3E300CD4698 /* CRLFAttribute.m in Sources */,
+				BC8363482215748F001C45B3 /* NodePrinter.cpp in Sources */,
+				BC055B0A220AD18800ED30E7 /* CLKSCrashMonitor_MachException.c in Sources */,
+				BC055B7A220AD18800ED30E7 /* CLKSHTTPMultipartPostBody.m in Sources */,
+				BC055B41220AD18800ED30E7 /* CLKSCPU.c in Sources */,
+				BC055B57220AD18800ED30E7 /* CLKSCrashDoctor.m in Sources */,
+				BC055B7E220AD18800ED30E7 /* NSString+URLEncode.m in Sources */,
+				BC055B5F220AD18800ED30E7 /* CLKSCrashReportFixer.c in Sources */,
+				BC055B4C220AD18800ED30E7 /* CLKSStackCursor_Backtrace.c in Sources */,
+				BC83633B22156D3D001C45B3 /* Context.cpp in Sources */,
+				BC055B25220AD18800ED30E7 /* CLKSCPU_arm.c in Sources */,
+				BC055B85220AD18800ED30E7 /* CLKSCrashReportSinkConsole.m in Sources */,
+				BCC7BCD0220AC41300CD4698 /* NSMutableDictionary+CRLFAdditions.m in Sources */,
+				BC055B58220AD18800ED30E7 /* CLKSCrashReport.c in Sources */,
+				BC055B70220AD18800ED30E7 /* CLKSCrashReportFilterGZip.m in Sources */,
+				BC055B73220AD18800ED30E7 /* CLKSCrashReportFilterBasic.m in Sources */,
+				BC055B00220AD18800ED30E7 /* CLKSCrashMonitor_Deadlock.m in Sources */,
+				BC055B03220AD18800ED30E7 /* CLKSCrashMonitor_System.m in Sources */,
+				BC055B07220AD18800ED30E7 /* CLKSCrashMonitor_Zombie.c in Sources */,
+				BC055B0C220AD18800ED30E7 /* CLKSCrashMonitorType.c in Sources */,
+				BC055B45220AD18800ED30E7 /* CLKSSysCtl.c in Sources */,
+				BC055AF8220AD18800ED30E7 /* Punycode.cpp in Sources */,
+				BC055B3F220AD18800ED30E7 /* CLKSDebug.c in Sources */,
+				BC055B3C220AD18800ED30E7 /* CLKSLogger.c in Sources */,
+				BC055B05220AD18800ED30E7 /* CLKSCrashMonitor_AppState.c in Sources */,
+				BC055B3D220AD18800ED30E7 /* CLKSSignalInfo.c in Sources */,
+				BC055AF5220AD18800ED30E7 /* Demangle.cpp in Sources */,
+				BC055B32220AD18800ED30E7 /* CLKSJSONCodecObjC.m in Sources */,
+				BC055B2F220AD18800ED30E7 /* CLKSDynamicLinker.c in Sources */,
+				BC055B72220AD18800ED30E7 /* CLKSCrashReportFilterStringify.m in Sources */,
+				BC055B53220AD18800ED30E7 /* CLKSCrashCachedData.c in Sources */,
+				BC055B23220AD18800ED30E7 /* CLKSFileUtils.c in Sources */,
+				BC055B08220AD18800ED30E7 /* CLKSCrashMonitor_NSException.m in Sources */,
+				BC83630F2214E777001C45B3 /* CRLFTelephonyNetworkInfo.m in Sources */,
+				BC8363262214E786001C45B3 /* CRLFDeviceInfoProvider.m in Sources */,
+				BC055B13220AD18800ED30E7 /* CLKSCrashMonitor.c in Sources */,
+				BCC7BCD4220AC4C200CD4698 /* CRLFCompatibilityUtils.m in Sources */,
+				BC055B79220AD18800ED30E7 /* CLKSReachabilityKSCrash.m in Sources */,
+				BC055B47220AD18800ED30E7 /* CLKSJSONCodec.c in Sources */,
+				BC055B20220AD18800ED30E7 /* CLKSCPU_x86_32.c in Sources */,
+				BC055B0E220AD18800ED30E7 /* CLKSCrashMonitor_Signal.c in Sources */,
+				BC055B42220AD18800ED30E7 /* CLKSStackCursor_SelfThread.c in Sources */,
+				BC055B4D220AD18800ED30E7 /* CLKSMach.c in Sources */,
+				BC055AFF220AD18800ED30E7 /* CLKSCrashReportStore.c in Sources */,
+				BC055B51220AD18800ED30E7 /* CLKSID.c in Sources */,
+				BC055B87220AD18800ED30E7 /* CLKSCrashReportSinkStandard.m in Sources */,
+				BC055B6E220AD18800ED30E7 /* CLKSCrashReportFilterAlert.m in Sources */,
+				BC055B64220AD18800ED30E7 /* NSData+CRLFGZip.m in Sources */,
+				BC8363172214E777001C45B3 /* CRLFThread.m in Sources */,
+				BC055B4F220AD18800ED30E7 /* CLKSCPU_arm64.c in Sources */,
+				BC055B7C220AD18800ED30E7 /* CLKSHTTPRequestSender.m in Sources */,
+				BC055B1B220AD18800ED30E7 /* CLKSDemangle_Swift.cpp in Sources */,
+				BC055B3A220AD18800ED30E7 /* CLKSCPU_x86_64.c in Sources */,
+				BC055B40220AD18800ED30E7 /* CLKSMemory.c in Sources */,
+				BC055B15220AD18800ED30E7 /* CLKSCrashMonitor_CPPException.cpp in Sources */,
+				BC055B7D220AD18800ED30E7 /* CLKSCString.m in Sources */,
+				B7EAF9A71FC8DBA900196024 /* Crashlife.m in Sources */,
+				BC055B7B220AD18800ED30E7 /* NSMutableData+AppendUTF8.m in Sources */,
+				BC055B88220AD18800ED30E7 /* CLKSCrashReportSinkEMail.m in Sources */,
+				BC055B24220AD18800ED30E7 /* CLKSObjC.c in Sources */,
+				BC83634422157292001C45B3 /* ManglingUtils.cpp in Sources */,
+				BC055B5C220AD18800ED30E7 /* CLKSCrashC.c in Sources */,
+				BC055B61220AD18800ED30E7 /* Container+CRLFDeepSearch.m in Sources */,
+				BC8363182214E777001C45B3 /* CRLFFootprint.m in Sources */,
+				BC8363152214E777001C45B3 /* CRLFMachException.m in Sources */,
+				BC836346221573EB001C45B3 /* Demangler.cpp in Sources */,
+				BC055B86220AD18800ED30E7 /* CLKSCrashReportSinkVictory.m in Sources */,
+				BC8363122214E777001C45B3 /* CRLFSignalException.m in Sources */,
+				BC055B2A220AD18800ED30E7 /* CLKSMachineContext.c in Sources */,
+				BC055B34220AD18800ED30E7 /* CLKSStackCursor.c in Sources */,
+				BC055B69220AD18800ED30E7 /* CLKSCrashReportFilterJSON.m in Sources */,
+				BC055B1C220AD18800ED30E7 /* NSError+CRLFSimpleConstructor.m in Sources */,
+				BC055B67220AD18800ED30E7 /* CLKSCrashReportFilterSets.m in Sources */,
+				BC8363192214E777001C45B3 /* CRLFCrashError.m in Sources */,
+				BC83633F22156DF2001C45B3 /* OldDemangler.cpp in Sources */,
+				BC055BAE220BE02300ED30E7 /* CRLFAppInfoProvider.m in Sources */,
+				BC8363112214E777001C45B3 /* CRLFDeviceInfo.m in Sources */,
+				BC055B35220AD18800ED30E7 /* CLKSStackCursor_MachineContext.c in Sources */,
+				BC83631B2214E777001C45B3 /* CRLFCrashReport.m in Sources */,
+				BCA18D4822408596007F6FF1 /* NSBundle+CRLFAdditions.m in Sources */,
+				BC055AFE220AD18800ED30E7 /* CLKSCrash.m in Sources */,
+				BC055B3B220AD18800ED30E7 /* CLKSSymbolicator.c in Sources */,
+				60DE31A61757B876393EC219 /* CRLFClient.m in Sources */,
+				BC8363252214E786001C45B3 /* CRLFReachability.m in Sources */,
+				60DE3820CB84D31817B8A6B2 /* CRLFNetworkManager.m in Sources */,
+				60DE3A019F457DF7F4CE94C3 /* NSError+CRLFAdditions.m in Sources */,
+				60DE3D1977810CE1915FB941 /* CRLFEvent.m in Sources */,
+				BC83630B2214E777001C45B3 /* CRLFBinaryImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B7EAF71E1FC8DAB000196024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7EAF71F1FC8DAB000196024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7EAF7211FC8DAB000196024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Crashlife/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.buglife.Crashlife;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7EAF7221FC8DAB000196024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Crashlife/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.buglife.Crashlife;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7EAF7121FC8DAB000196024 /* Build configuration list for PBXProject "Crashlife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7EAF71E1FC8DAB000196024 /* Debug */,
+				B7EAF71F1FC8DAB000196024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7EAF7201FC8DAB000196024 /* Build configuration list for PBXNativeTarget "Crashlife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7EAF7211FC8DAB000196024 /* Debug */,
+				B7EAF7221FC8DAB000196024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7EAF70F1FC8DAB000196024 /* Project object */;
+}

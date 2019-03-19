@@ -1,0 +1,6 @@
+framework module Crashlife {
+  umbrella header "Crashlife-umbrella.h"
+
+  export *
+  module * { export * }
+}

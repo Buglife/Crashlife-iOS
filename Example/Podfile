@@ -1,0 +1,6 @@
+use_frameworks!
+platform :ios, '9.0'
+
+target 'Crashlife Example' do
+    pod 'Crashlife', :path => '../'
+end
