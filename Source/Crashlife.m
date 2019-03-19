@@ -93,6 +93,7 @@ static NSString * const kSDKVersion = @"1.0.0";
 {
     NSParameterAssert([self isStarted]);
     [self.client submitPendingReports];
+    [self.client logClientEventWithName:@"app_launch" afterDelay:10.0];
 }
 
 - (void)setUserIdentifier:(NSString *)identifier {

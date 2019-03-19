@@ -20,5 +20,5 @@
 - (void)logError:(NSString *)message;
 - (void)logWarning:(NSString *)message;
 - (void)logInfo:(NSString *)message;
-
+- (void)logClientEventWithName:(nonnull NSString *)eventName afterDelay:(NSTimeInterval)delay;
 @end

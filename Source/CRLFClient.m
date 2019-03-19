@@ -351,6 +351,49 @@
 
 }
 
+- (void)logClientEventWithName:(nonnull NSString *)eventName afterDelay:(NSTimeInterval)delay
+{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self logClientEventWithName:eventName];
+    });
+}
+
+- (void)logClientEventWithName:(nonnull NSString *)eventName
+{
+    CRLFLogExtDebug(@"Logging event: \"%@\"", eventName);
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params crlf_safeSetObject:self.apiKey forKey:@"api_key"];
+    
+    NSString *deviceIdentifier = [UIDevice currentDevice].identifierForVendor.UUIDString;
+    NSString *userIdentifier = self.userIdentifier;
+    NSMutableDictionary *clientEventParams = [NSMutableDictionary dictionary];
+    [clientEventParams crlf_safeSetObject:self.sdkVersion forKey:@"sdk_version"];
+    [clientEventParams crlf_safeSetObject:self.sdkName forKey:@"sdk_name"];
+    [clientEventParams crlf_safeSetObject:eventName forKey:@"event_name"];
+    [clientEventParams crlf_safeSetObject:userIdentifier forKey:@"user_identifier"];
+    [clientEventParams crlf_safeSetObject:deviceIdentifier forKey:@"device_identifier"];
+    
+    [self.appInfoProvider asyncFetchAppInfoToQueue:_workQueue completion:^(CRLFAppInfo *appInfo) {
+        clientEventParams[@"bundle_short_version"] = appInfo.bundleShortVersion;
+        clientEventParams[@"bundle_version"] = appInfo.bundleVersion;
+        
+        NSMutableDictionary *appParams = [NSMutableDictionary dictionary];
+        [appParams crlf_safeSetObject:appInfo.bundleIdentifier forKey:@"bundle_identifier"];
+        [appParams crlf_safeSetObject:self.platform forKey:@"platform"];
+        [appParams crlf_safeSetObject:appInfo.bundleName forKey:@"bundle_name"];
+        
+        [params crlf_safeSetObject:appParams forKey:@"app"];
+        [params crlf_safeSetObject:clientEventParams forKey:@"client_event"];
+        
+        [self.networkManager POST:@"api/v1/client_events.json" parameters:params callbackQueue:self.workQueue success:^(id responseObject) {
+            CRLFLogExtDebug(@"Successfully posted event \"%@\"", eventName);
+        } failure:^(NSError *error) {
+            CRLFLogExtError(@"Error posting event \"%@\"\n  Error: %@", eventName, error);
+        }];
+    }];
+}
+
 
 #pragma mark - Attributes and Footprints
 
