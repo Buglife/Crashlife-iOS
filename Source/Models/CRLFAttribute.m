@@ -142,7 +142,7 @@ static CRLFAttributeFlags CRLFAttributeFlagForName(NSString * name) {
 + (CRLFMutableAttributes *)mutableAttributesFromJSONDictionary:(NSDictionary *)dictionary {
     CRLFMutableAttributes *mutableAttributes = [[NSMutableDictionary alloc] init];
     for (NSString *key in dictionary) {
-        CRLFAttribute *attribute = [[CRLFAttribute alloc] initWithValueType:CRLFAttributeValueTypeString value:((NSObject *)dictionary[key]).description flags:CRLFAttributeFlagCustom];
+        CRLFAttribute *attribute = [[CRLFAttribute alloc] initWithValueType:CRLFAttributeValueTypeString value:((NSObject *)dictionary[key][@"value"]).description flags:CRLFAttributeFlagForName(dictionary[key][@"flags"])];
         [mutableAttributes crlf_safeSetObject:attribute forKey:key];
     }
     return mutableAttributes;
@@ -151,7 +151,10 @@ static CRLFAttributeFlags CRLFAttributeFlagForName(NSString * name) {
     NSMutableArray *ret = [NSMutableArray array];
     for (NSString *key in attributes) {
         NSMutableDictionary *fullAttr = [NSMutableDictionary dictionary];
-        fullAttr[@"key"] = key;
+        if (attributes[key].value == nil || ![attributes[key].value isKindOfClass:[NSString class]] || [((NSString *)attributes[key].value) isEqualToString:@""]) {
+            continue;
+        }
+        fullAttr[@"key"] = key;        
         fullAttr[@"value"] = attributes[key].value;
         fullAttr[@"flags"] = CRLFAttributeNameForAttributeFlag(attributes[key].flags);
         [ret addObject:fullAttr];

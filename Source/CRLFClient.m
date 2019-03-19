@@ -58,6 +58,13 @@
         _sdkName = @"Crashlife iOS";
         _sdkVersion = sdkVersion;
         _platform = @"ios";
+        [self localeChanged:nil];
+        [self thermalStateChanged:nil];
+        [self powerStateChanged:nil];
+        [self telephonyInfoChanged:nil];
+        [self batteryLevelChanged:nil];
+        [self batteryLevelChanged:nil];
+        [self isOnWiFiChanged:nil];
     }
     return self;
 }
@@ -246,8 +253,10 @@
     CRLFAttribute *appInForeground = [CRLFAttribute attributeWithString:systemDict[@CLKSCrashField_AppStats][@CLKSCrashField_AppInFG] flags:CRLFAttributeFlagSystem];
     CRLFAttribute *jailbroken = [CRLFAttribute attributeWithString:((NSNumber *)systemDict[@CLKSCrashField_Jailbroken]).boolValue?@"true":@"false" flags:CRLFAttributeFlagSystem];
     CRLFAttribute *storage = [CRLFAttribute attributeWithString:[NSString stringWithFormat:@"%@", systemDict[@CLKSCrashField_Storage]] flags:CRLFAttributeFlagSystem];
+    CRLFAttribute *bundleName = [CRLFAttribute attributeWithString:systemDict[@CLKSCrashField_BundleName] flags:CRLFAttributeFlagSystem];
+    CRLFAttribute *bundleVersion = [CRLFAttribute attributeWithString:[NSString stringWithFormat:@"%@", systemDict[@CLKSCrashField_BundleVersion]] flags:CRLFAttributeFlagSystem];
+    CRLFAttribute *bundleShortVersion = [CRLFAttribute attributeWithString:systemDict[@CLKSCrashField_BundleShortVersion] flags:CRLFAttributeFlagSystem];
     
-
     CRLFMutableAttributes *attributes = [CRLFAttribute mutableAttributesFromJSONDictionary:userInfo[@"attributes"]];
     [attributes crlf_safeSetObject:identifierForVendorAttr forKey:@"device_identifier"];
     [attributes crlf_safeSetObject:freeMemory forKey:@"free_memory_bytes"];
@@ -261,7 +270,9 @@
     [attributes crlf_safeSetObject:appInForeground forKey:@"app_in_foreground"];
     [attributes crlf_safeSetObject:jailbroken forKey:@"jailbroken"];
     [attributes crlf_safeSetObject:storage forKey:@"total_capacity_bytes"]; // sorry, free storage is not available at crash time - no way to make it async-safe
-    
+    [attributes crlf_safeSetObject:bundleName forKey:@"bundle_name"];
+    [attributes crlf_safeSetObject:bundleVersion forKey:@"bundle_version"];
+    [attributes crlf_safeSetObject:bundleShortVersion forKey:@"bundle_short_version"];
     
     event.attributes = [NSDictionary dictionaryWithDictionary:attributes];
     
@@ -269,9 +280,9 @@
         CFBundleExecutable = "Crashlife Example";
         CFBundleExecutablePath = "/var/containers/Bundle/Application/BBC49C35-2139-4B17-88CB-43657E54734D/Crashlife Example.app/Crashlife Example";
         CFBundleIdentifier = "com.Buglife.Crashlife-Example";
-        CFBundleName = "Crashlife Example";
-        CFBundleShortVersionString = "1.0";
-        CFBundleVersion = 1;
+        CFBundleName = "Crashlife Example"; √
+        CFBundleShortVersionString = "1.0"; √
+        CFBundleVersion = 1; √
         "app_start_time" = "2019-03-16T05:42:35Z";
         "app_uuid" = "9FCCA114-A031-38C1-83E7-8214308B39FA";
         "application_stats" =         {
@@ -293,20 +304,20 @@
         "cpu_subtype" = 1;
         "cpu_type" = 16777228;
         "device_app_hash" = b91bee2ae17222fbef924e6288ca34e0d578a2e6;
-        jailbroken = 0;
+        jailbroken = 0; √
         "kernel_version" = "Darwin Kernel Version 18.2.0: Wed Dec 19 20:28:53 PST 2018; root:xnu-4903.242.2~1/RELEASE_ARM64_T8015";
         machine = "iPhone10,6";
         memory =         {
-            free = 90423296;
-            size = 2960130048;
-            usable = 2025209856;
+            free = 90423296; √
+            size = 2960130048; √
+            usable = 2025209856; √
         };
         model = D221AP;
-        "os_version" = 16D57;
+        "os_version" = 16D57; √
         "parent_process_id" = 1;
         "process_id" = 8926;
         "process_name" = "Crashlife Example";
-        storage = 255937040384;
+        storage = 255937040384; √
         "system_name" = iOS;
         "system_version" = "12.1.4"; √
         "time_zone" = PDT;
@@ -456,8 +467,9 @@
 - (void)addFootprintToCrashInfo:(CRLFFootprint *)footprint {
     NSMutableDictionary *dict = [CRLFClient mutableCLKSCrashUserInfoDict];
     NSArray *footprints = dict[@"footprints"];
-    NSArray *newFootprints = [footprints arrayByAddingObject:footprint];
-    dict[@"footprints"] = newFootprints;
+    NSMutableArray *mutableFootprints = [NSMutableArray arrayWithArray:footprints];
+    [mutableFootprints addObject:footprint.JSONDictionary];
+    dict[@"footprints"] = mutableFootprints;
     CLKSCrash.sharedInstance.userInfo = dict;
 }
 
