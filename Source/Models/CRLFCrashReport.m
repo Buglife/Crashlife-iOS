@@ -125,29 +125,30 @@
         }
         NSArray *backtrace = [self denormalizeThread:thread];
         [exception crlf_safeSetObject:backtrace forKey:@"stack_frames"];
+        NSDictionary *crashDictError = self.crashDict[@"error"];
         NSDictionary *error;
         if ([self.crashError.type isEqualToString:@CLKSCrashExcType_Mach]) {
-            error = self.crashDict[@CLKSCrashField_Mach];
+            error = crashDictError[@CLKSCrashField_Mach];
             [exception crlf_safeSetObject:error[@CLKSCrashField_ExceptionName] forKey:@"name"];
             //TODO: other Fields
         }
         else if ([self.crashError.type isEqualToString:@CLKSCrashExcType_Signal]) {
-            error = self.crashDict[@CLKSCrashField_Signal];
+            error = crashDictError[@CLKSCrashField_Signal];
             [exception crlf_safeSetObject:error[@CLKSCrashField_Name] forKey:@"name"];
             //TODO: other fields?
         }
         else if ([self.crashError.type isEqualToString:@CLKSCrashExcType_CPPException]) {
-            error = self.crashDict[@CLKSCrashField_CPPException];
+            error = crashDictError[@CLKSCrashField_CPPException];
             [exception crlf_safeSetObject:error[@CLKSCrashField_Name] forKey:@"name"];
             //no other fields
         }
-        else if ([self.crashError.type isEqualToString:@CLKSCrashField_NSException]) {
-            error = self.crashDict[@CLKSCrashField_NSException];
+        else if ([self.crashError.type isEqualToString:@CLKSCrashExcType_NSException]) {
+            error = crashDictError[@CLKSCrashField_NSException];
             [exception crlf_safeSetObject:error[@CLKSCrashField_Name] forKey:@"name"];
             //todo: userinfo?, crash reason?
         }
         else if ([self.crashError.type isEqualToString:@CLKSCrashExcType_User]) {
-            error = self.crashDict[@CLKSCrashField_User];
+            error = crashDictError[@CLKSCrashField_User];
             [exception crlf_safeSetObject:error[@CLKSCrashField_Name] forKey:@"name"];
             //TODO: other fields, including? embedded stack trace if applicable?
         }
