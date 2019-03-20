@@ -1,5 +1,5 @@
 PODS:
-  - Crashlife (1.0.0)
+  - Crashlife (1.0.1)
 
 DEPENDENCIES:
   - Crashlife (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Crashlife: 96c68160e2ab9e4d4d49eaa27d2a218eb53b7662
+  Crashlife: 315cc33609499fa1dd5c37c695c2b328cbefcafe
 
 PODFILE CHECKSUM: 5d8f21fc8db88d51a342dd24629a57388fb68eb9
 
