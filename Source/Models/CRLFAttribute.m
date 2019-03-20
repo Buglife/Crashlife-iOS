@@ -57,6 +57,7 @@ static CRLFAttributeFlags CRLFAttributeFlagForName(NSString * name) {
     }
     return CRLFAttributeFlagCustom;
 }
+
 @implementation CRLFAttribute
 
 - (instancetype)initWithValueType:(CRLFAttributeValueType)valueType value:(NSObject *)value flags:(CRLFAttributeFlags)flags
@@ -118,7 +119,7 @@ static CRLFAttributeFlags CRLFAttributeFlagForName(NSString * name) {
     
 //    [dict crlf_safeSetObject:@(_valueType) forKey:@"attribute_type"];
     [dict crlf_safeSetObject:_value forKey:@"value"];
-    [dict crlf_safeSetObject:CRLFAttributeNameForAttributeFlag(_flags) forKey:@"flags"];
+    [dict crlf_safeSetObject:CRLFAttributeNameForAttributeFlag(_flags) forKey:@"flag"];
     
     return [NSDictionary dictionaryWithDictionary:dict];
 }
@@ -142,7 +143,7 @@ static CRLFAttributeFlags CRLFAttributeFlagForName(NSString * name) {
 + (CRLFMutableAttributes *)mutableAttributesFromJSONDictionary:(NSDictionary *)dictionary {
     CRLFMutableAttributes *mutableAttributes = [[NSMutableDictionary alloc] init];
     for (NSString *key in dictionary) {
-        CRLFAttribute *attribute = [[CRLFAttribute alloc] initWithValueType:CRLFAttributeValueTypeString value:((NSObject *)dictionary[key][@"value"]).description flags:CRLFAttributeFlagForName(dictionary[key][@"flags"])];
+        CRLFAttribute *attribute = [[CRLFAttribute alloc] initWithValueType:CRLFAttributeValueTypeString value:((NSObject *)dictionary[key][@"value"]).description flags:CRLFAttributeFlagForName(dictionary[key][@"flag"])];
         [mutableAttributes crlf_safeSetObject:attribute forKey:key];
     }
     return mutableAttributes;
@@ -156,7 +157,7 @@ static CRLFAttributeFlags CRLFAttributeFlagForName(NSString * name) {
         }
         fullAttr[@"key"] = key;        
         fullAttr[@"value"] = attributes[key].value;
-        fullAttr[@"flags"] = CRLFAttributeNameForAttributeFlag(attributes[key].flags);
+        fullAttr[@"flag"] = CRLFAttributeNameForAttributeFlag(attributes[key].flags);
         [ret addObject:fullAttr];
     }
     return ret;
@@ -164,7 +165,7 @@ static CRLFAttributeFlags CRLFAttributeFlagForName(NSString * name) {
 + (CRLFMutableAttributes *)mutableAttributesFromJSONArray:(NSArray<NSDictionary *> *)array {
     CRLFMutableAttributes *mutableAttributes = [[NSMutableDictionary alloc] init];
     for (NSDictionary *fullDict in array) {
-        CRLFAttribute *attribute = [CRLFAttribute attributeWithString:fullDict[@"value"] flags:CRLFAttributeFlagForName(fullDict[@"flags"])];
+        CRLFAttribute *attribute = [CRLFAttribute attributeWithString:fullDict[@"value"] flags:CRLFAttributeFlagForName(fullDict[@"flag"])];
         mutableAttributes[fullDict[@"key"]] = attribute;
     }
     return mutableAttributes;
