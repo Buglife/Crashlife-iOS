@@ -83,6 +83,44 @@ Now run `carthage update`. Then drag & drop the Crashlife.framework in the Carth
 3. Build & run your app, then crash it (hopefully deliberately)! Note that the crash reporter will not activate for most crashes if the app was started attached to a debugger.
 
 4. On relaunch, your crash will be submitted; then go to the Crashlife web dashboard.
+
+### Symbolication
+
+#### With Bitcode
+
+Check back here soon!
+
+#### Without Bitcode
+
+Add a build phase to your Xcode project to upload dSYMs with each build:
+
+1. Select your project in the Xcode project navigator
+2. Select the “Build Phases” tab
+3. Click the “+” button in the top left corner, and select “New Run Script Phase”
+4. In the newly created run script, change the “Shell” field to `/usr/bin/ruby`
+5. Paste the following snippet into the build phase:
+
+	```ruby
+	fork do	
+        Process.setsid
+        STDIN.reopen("/dev/null")
+        STDOUT.reopen("/dev/null", "a")
+        STDERR.reopen("/dev/null", "a")
+        
+        require 'shellwords'
+        
+        API_KEY='YOUR_API_KEY_HERE'
+        
+        bundle_identifier = ENV['PRODUCT_BUNDLE_IDENTIFIER']
+        infoplist_path = "#{ENV['BUILT_PRODUCTS_DIR']}/#{ENV['INFOPLIST_PATH']}"
+        bundle_short_version = `/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" #{infoplist_path}`.strip
+        bundle_version = `/usr/libexec/PlistBuddy -c "Print CFBundleVersion" #{infoplist_path}`.strip
+        
+        Dir["#{ENV["DWARF_DSYM_FOLDER_PATH"]}/*/Contents/Resources/DWARF/*"].each do |dsym|
+            system("curl -F apiKey=#{API_KEY} -F bundle_identifier=#{Shellwords.escape(bundle_identifier)} -F bundle_version=#{Shellwords.escape(bundle_version)} -F bundle_short_version=#{Shellwords.escape(bundle_short_version)} -F dsym=@#{Shellwords.escape(dsym)} -F projectRoot=#{Shellwords.escape(ENV["PROJECT_DIR"])} https://www.buglife.com/upload_dsym")
+        end
+    end
+    ```
 		
 ## Usage
 
